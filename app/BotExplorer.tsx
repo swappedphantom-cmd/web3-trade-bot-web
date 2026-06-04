@@ -2,9 +2,10 @@
 
 import { useMemo, useState } from "react"
 import type { Bot, Dataset } from "../lib/types"
-import { securityBadge } from "../lib/types"
+import { securityBadge, combinedRank } from "../lib/types"
 
 const PROFIT_STRATEGIES = ["arbitrage", "mev", "sniping", "flashloan-arb", "sandwich"]
+type Sort = "rank" | "score" | "buzz"
 
 export default function BotExplorer({ data }: { data: Dataset }) {
   const [q, setQ] = useState("")
@@ -12,6 +13,14 @@ export default function BotExplorer({ data }: { data: Dataset }) {
   const [dex, setDex] = useState("")
   const [strategy, setStrategy] = useState("")
   const [cleanOnly, setCleanOnly] = useState(false)
+  const hasSocial = !!data.social?.available
+  const [sort, setSort] = useState<Sort>(hasSocial ? "rank" : "score")
+
+  const comparator = useMemo(() => {
+    if (sort === "buzz") return (a: Bot, b: Bot) => (b.socialScore ?? 0) - (a.socialScore ?? 0)
+    if (sort === "rank") return (a: Bot, b: Bot) => combinedRank(b) - combinedRank(a)
+    return (a: Bot, b: Bot) => b.botScore - a.botScore
+  }, [sort])
 
   const bots = useMemo(() => {
     const needle = q.trim().toLowerCase()
@@ -27,8 +36,8 @@ export default function BotExplorer({ data }: { data: Dataset }) {
         }
         return true
       })
-      .sort((a, b) => b.botScore - a.botScore)
-  }, [data.bots, q, chain, dex, strategy, cleanOnly])
+      .sort(comparator)
+  }, [data.bots, q, chain, dex, strategy, cleanOnly, comparator])
 
   return (
     <main>
@@ -50,6 +59,12 @@ export default function BotExplorer({ data }: { data: Dataset }) {
         {data.generatedAt && (
           <p className="generated">Dernière analyse : {new Date(data.generatedAt).toLocaleString("fr-FR")}</p>
         )}
+        {data.social?.simulated && (
+          <p className="sim-banner">
+            🔬 Le « buzz » X est actuellement <strong>simulé</strong> (mock) — branche un compte X pour des
+            données réelles.
+          </p>
+        )}
       </header>
 
       <section className="controls">
@@ -62,6 +77,11 @@ export default function BotExplorer({ data }: { data: Dataset }) {
         <Select label="Chaîne" value={chain} setValue={setChain} options={data.categories.chains} />
         <Select label="DEX" value={dex} setValue={setDex} options={data.categories.dexes} />
         <Select label="Stratégie" value={strategy} setValue={setStrategy} options={data.categories.strategies} />
+        <select className="select" value={sort} onChange={(e) => setSort(e.target.value as Sort)}>
+          {hasSocial && <option value="rank">Trier : rang (qualité + buzz)</option>}
+          <option value="score">Trier : score qualité</option>
+          {hasSocial && <option value="buzz">Trier : profit / buzz 🔥</option>}
+        </select>
         <label className="toggle">
           <input type="checkbox" checked={cleanOnly} onChange={(e) => setCleanOnly(e.target.checked)} />
           Sans red flag uniquement
@@ -119,7 +139,14 @@ function BotCard({ bot, rank }: { bot: Bot; rank: number }) {
     <a className="card" href={`https://github.com/${bot.fullName}`} target="_blank" rel="noreferrer">
       <div className="card-top">
         <span className="rank">#{rank}</span>
-        <span className={`badge ${badge.cls}`}>{badge.label}</span>
+        <span className="card-top-right">
+          {typeof bot.socialScore === "number" && bot.socialScore >= 60 && (
+            <span className="badge badge-buzz" title="forte traction X / claims de profit">
+              🔥 {bot.socialScore}
+            </span>
+          )}
+          <span className={`badge ${badge.cls}`}>{badge.label}</span>
+        </span>
       </div>
       <h3 className="name">
         {bot.fullName}
@@ -151,7 +178,13 @@ function BotCard({ bot, rank }: { bot: Bot; rank: number }) {
       </div>
       <div className="meta">
         <span>⭐ {bot.stars.toLocaleString()}</span>
-        <span>{bot.language || "—"}</span>
+        {typeof bot.socialScore === "number" && bot.mentions ? (
+          <span title={`${bot.mentions} mentions X · ${Math.round((bot.profitRatio ?? 0) * 100)}% claims de profit`}>
+            🔥 buzz {bot.socialScore}
+          </span>
+        ) : (
+          <span>{bot.language || "—"}</span>
+        )}
       </div>
     </a>
   )
