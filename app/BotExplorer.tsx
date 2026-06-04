@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import type { Bot, Dataset } from "../lib/types"
 import { securityBadge } from "../lib/types"
 
@@ -12,6 +12,14 @@ export default function BotExplorer({ data }: { data: Dataset }) {
   const [dex, setDex] = useState("")
   const [strategy, setStrategy] = useState("")
   const [cleanOnly, setCleanOnly] = useState(false)
+  const [formattedDate, setFormattedDate] = useState<string | null>(null)
+
+  // Format date on client only to avoid hydration mismatch
+  useEffect(() => {
+    if (data.generatedAt) {
+      setFormattedDate(new Date(data.generatedAt).toLocaleString("fr-FR"))
+    }
+  }, [data.generatedAt])
 
   const bots = useMemo(() => {
     const needle = q.trim().toLowerCase()
@@ -47,8 +55,8 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           <Stat label="chaînes" value={data.categories.chains.length} />
           <Stat label="stratégies" value={data.categories.strategies.length} />
         </div>
-        {data.generatedAt && (
-          <p className="generated">Dernière analyse : {new Date(data.generatedAt).toLocaleString("fr-FR")}</p>
+        {formattedDate && (
+          <p className="generated">Dernière analyse : {formattedDate}</p>
         )}
       </header>
 
