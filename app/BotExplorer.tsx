@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import type { Bot, Dataset } from "../lib/types"
 import { securityBadge, combinedRank } from "../lib/types"
 
@@ -13,8 +13,16 @@ export default function BotExplorer({ data }: { data: Dataset }) {
   const [dex, setDex] = useState("")
   const [strategy, setStrategy] = useState("")
   const [cleanOnly, setCleanOnly] = useState(false)
+  const [formattedDate, setFormattedDate] = useState<string | null>(null)
   const hasSocial = !!data.social?.available
   const [sort, setSort] = useState<Sort>(hasSocial ? "rank" : "score")
+
+  // Format date on client only to avoid hydration mismatch
+  useEffect(() => {
+    if (data.generatedAt) {
+      setFormattedDate(new Date(data.generatedAt).toLocaleString("fr-FR"))
+    }
+  }, [data.generatedAt])
 
   const comparator = useMemo(() => {
     if (sort === "buzz") return (a: Bot, b: Bot) => (b.socialScore ?? 0) - (a.socialScore ?? 0)
@@ -56,8 +64,8 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           <Stat label="chaînes" value={data.categories.chains.length} />
           <Stat label="stratégies" value={data.categories.strategies.length} />
         </div>
-        {data.generatedAt && (
-          <p className="generated">Dernière analyse : {new Date(data.generatedAt).toLocaleString("fr-FR")}</p>
+        {formattedDate && (
+          <p className="generated">Dernière analyse : {formattedDate}</p>
         )}
         {data.social?.simulated && (
           <p className="sim-banner">
