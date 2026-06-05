@@ -545,3 +545,18 @@ main {
 .meta-line a {
   color: var(--accent);
 }
+.reports {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.reports a, .report-line a {
+  color: var(--accent);
+  font-weight: 600;
+}
+.report-line {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}

@@ -58,6 +58,16 @@ export default function Page() {
             <div className="stat-label">alpha moyen vs hold</div>
           </div>
         </div>
+        <p className="reports">
+          📥 Rapport complet :{" "}
+          <a href="/web3-trade-bot-web/backtests.csv" download>
+            CSV
+          </a>{" "}
+          ·{" "}
+          <a href="/web3-trade-bot-web/backtests.json" download>
+            JSON
+          </a>
+        </p>
       </header>
 
       <BacktestTable bots={bots} />

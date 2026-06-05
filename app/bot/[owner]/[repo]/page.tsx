@@ -102,6 +102,14 @@ export default function Page({ params }: { params: { owner: string; repo: string
           <Stat label="exposition moy." value={pct(bot.backtestExposure)} />
           <Stat label="score code" value={num(bot.botScore, 0)} />
         </div>
+        <p className="report-line">
+          📋 Backtest : <strong>{bot.backtestStrategy}</strong> sur {bot.backtestAssets?.length ?? 0} actif(s) (
+          {(bot.backtestAssets ?? []).join(", ")}). Walk-forward out-of-sample, frais + slippage, P&amp;L
+          réalisé FIFO. ·{" "}
+          <a href="/web3-trade-bot-web/backtests.csv" download>
+            rapport complet (CSV)
+          </a>
+        </p>
       </section>
 
       <section className="panel">
