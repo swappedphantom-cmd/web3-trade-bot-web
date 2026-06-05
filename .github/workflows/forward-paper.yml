@@ -1,0 +1,45 @@
+name: forward-paper-tracker
+
+# Daily: advance the forward paper-trading P&L on real market data, then redeploy.
+on:
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC daily
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: forward-paper
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+
+      - name: Update forward paper P&L
+        run: node scripts/track-live.mjs
+
+      - name: Commit updated track record
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/paper-live.json
+          git commit -m "chore: forward paper P&L update" || echo "no changes"
+          git push || echo "nothing to push"
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          # peaceiris adds .nojekyll automatically (so _next/ isn't ignored)

@@ -1,0 +1,197 @@
+{
+  "simulated": true,
+  "capital": 10000,
+  "startMs": 1778025600000,
+  "startDate": "2026-05-06",
+  "updatedAt": "2026-06-05",
+  "days": 31,
+  "portfolio": {
+    "initialValue": 10000,
+    "finalValue": 9761.18,
+    "pnl": -238.82,
+    "return": -0.024,
+    "maxDrawdown": 0.024,
+    "curve": [
+      {
+        "date": "2026-05-06",
+        "value": 10000
+      },
+      {
+        "date": "2026-05-07",
+        "value": 10000
+      },
+      {
+        "date": "2026-05-08",
+        "value": 10000
+      },
+      {
+        "date": "2026-05-09",
+        "value": 10000
+      },
+      {
+        "date": "2026-05-10",
+        "value": 10000
+      },
+      {
+        "date": "2026-05-11",
+        "value": 10000
+      },
+      {
+        "date": "2026-05-12",
+        "value": 9999
+      },
+      {
+        "date": "2026-05-13",
+        "value": 9982.14
+      },
+      {
+        "date": "2026-05-14",
+        "value": 9971.35
+      },
+      {
+        "date": "2026-05-15",
+        "value": 9947.07
+      },
+      {
+        "date": "2026-05-16",
+        "value": 9947.74
+      },
+      {
+        "date": "2026-05-17",
+        "value": 9945.22
+      },
+      {
+        "date": "2026-05-18",
+        "value": 9946.44
+      },
+      {
+        "date": "2026-05-19",
+        "value": 9932.07
+      },
+      {
+        "date": "2026-05-20",
+        "value": 9950.24
+      },
+      {
+        "date": "2026-05-21",
+        "value": 9953.93
+      },
+      {
+        "date": "2026-05-22",
+        "value": 9944.89
+      },
+      {
+        "date": "2026-05-23",
+        "value": 9956.47
+      },
+      {
+        "date": "2026-05-24",
+        "value": 9948.49
+      },
+      {
+        "date": "2026-05-25",
+        "value": 9964.04
+      },
+      {
+        "date": "2026-05-26",
+        "value": 9951.15
+      },
+      {
+        "date": "2026-05-27",
+        "value": 9934.86
+      },
+      {
+        "date": "2026-05-28",
+        "value": 9916.35
+      },
+      {
+        "date": "2026-05-29",
+        "value": 9932.8
+      },
+      {
+        "date": "2026-05-30",
+        "value": 9935.48
+      },
+      {
+        "date": "2026-05-31",
+        "value": 9954.96
+      },
+      {
+        "date": "2026-06-01",
+        "value": 9957.63
+      },
+      {
+        "date": "2026-06-02",
+        "value": 9903.94
+      },
+      {
+        "date": "2026-06-03",
+        "value": 9914.62
+      },
+      {
+        "date": "2026-06-04",
+        "value": 9860.53
+      },
+      {
+        "date": "2026-06-05",
+        "value": 9761.18
+      }
+    ]
+  },
+  "positions": [
+    {
+      "fullName": "gweidart/alpha-evm-dex-bot",
+      "owner": "gweidart",
+      "repo": "alpha-evm-dex-bot",
+      "asset": "POLUSDT",
+      "amount": 1666.67,
+      "finalValue": 1626.39,
+      "return": -0.024
+    },
+    {
+      "fullName": "Neutral-Debug/Mexc-Trading-Bot",
+      "owner": "Neutral-Debug",
+      "repo": "Mexc-Trading-Bot",
+      "asset": "POLUSDT",
+      "amount": 1666.67,
+      "finalValue": 1626.39,
+      "return": -0.024
+    },
+    {
+      "fullName": "xlev-v/Hyperliquid-Trading-Bot",
+      "owner": "xlev-v",
+      "repo": "Hyperliquid-Trading-Bot",
+      "asset": "POLUSDT",
+      "amount": 1666.67,
+      "finalValue": 1626.41,
+      "return": -0.024
+    },
+    {
+      "fullName": "wilsonfreitas/awesome-quant",
+      "owner": "wilsonfreitas",
+      "repo": "awesome-quant",
+      "asset": "POLUSDT",
+      "amount": 1666.67,
+      "finalValue": 1626.41,
+      "return": -0.024
+    },
+    {
+      "fullName": "0xfnzero/sol-trade-sdk",
+      "owner": "0xfnzero",
+      "repo": "sol-trade-sdk",
+      "asset": "SOLUSDT",
+      "amount": 1666.67,
+      "finalValue": 1627.79,
+      "return": -0.023
+    },
+    {
+      "fullName": "gianlucamazza/solana-mmaker",
+      "owner": "gianlucamazza",
+      "repo": "solana-mmaker",
+      "asset": "SOLUSDT",
+      "amount": 1666.67,
+      "finalValue": 1627.79,
+      "return": -0.023
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import paper from "../../data/paper.json"
+import live from "../../data/paper-live.json"
 
 export const metadata = {
   title: "Paper trading — Web3 Trading Bot Index",
@@ -78,7 +79,32 @@ export default function Page() {
       </header>
 
       <section className="panel">
-        <h2 className="panel-title">Courbe du portefeuille papier</h2>
+        <h2 className="panel-title">
+          📡 Forward (live) — depuis {live.startDate}, mis à jour {live.updatedAt}
+        </h2>
+        <div className="bstats">
+          <div className="bstat bstat-big">
+            <div className={`bstat-value ${cls(live.portfolio.return)}`}>{pct(live.portfolio.return, true)}</div>
+            <div className="bstat-label">rendement forward ({live.days} j)</div>
+          </div>
+          <div className="bstat bstat-big">
+            <div className="bstat-value">{eur(live.portfolio.finalValue)}</div>
+            <div className="bstat-label">valeur (départ {eur(live.capital)})</div>
+          </div>
+          <div className="bstat bstat-big">
+            <div className="bstat-value neg">{pct(live.portfolio.maxDrawdown)}</div>
+            <div className="bstat-label">max drawdown</div>
+          </div>
+        </div>
+        <Chart curve={live.portfolio.curve.map((c) => c.value)} base={live.capital} />
+        <p className="meta-line">
+          🤖 Mis à jour <strong>chaque jour</strong> (GitHub Actions) sur les vraies données de marché. Params
+          figés au {live.startDate} — c&apos;est du <strong>vrai forward</strong>, pas du backtest rétro-ajusté.
+        </p>
+      </section>
+
+      <section className="panel">
+        <h2 className="panel-title">Réplay backtest (période out-of-sample)</h2>
         <Chart curve={p.curve} base={paper.capital} />
       </section>
 
