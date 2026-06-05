@@ -95,7 +95,8 @@
       "socialScore": 76.8,
       "buzzVerdict": "neutral",
       "profitRatio": 0.647,
-      "mentions": 17
+      "mentions": 17,
+      "backtestable": false
     },
     {
       "fullName": "0xalberto/jupiter-arbitrage-bot",
@@ -125,7 +126,8 @@
       "socialScore": 72.4,
       "buzzVerdict": "neutral",
       "profitRatio": 0.5,
-      "mentions": 14
+      "mentions": 14,
+      "backtestable": false
     },
     {
       "fullName": "adams322111233221/solana-mev-bot",
@@ -151,7 +153,8 @@
       "socialScore": 72.2,
       "buzzVerdict": "neutral",
       "profitRatio": 0.462,
-      "mentions": 13
+      "mentions": 13,
+      "backtestable": false
     },
     {
       "fullName": "0xfnzero/sol-trade-sdk",
@@ -178,7 +181,19 @@
       "socialScore": 78.1,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.647,
-      "mentions": 17
+      "mentions": 17,
+      "backtestable": true,
+      "backtestReturn": -0.202,
+      "backtestSharpe": -1.268,
+      "backtestDrawdown": 0.242,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "sorasuzukidev/ethereum-bnb-mev-bot",
@@ -215,7 +230,8 @@
       "socialScore": 65.8,
       "buzzVerdict": "neutral",
       "profitRatio": 0.3,
-      "mentions": 10
+      "mentions": 10,
+      "backtestable": false
     },
     {
       "fullName": "BowTiedDevil/degenbot",
@@ -247,7 +263,22 @@
       "socialScore": 71.5,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.5,
-      "mentions": 8
+      "mentions": 8,
+      "backtestable": true,
+      "backtestReturn": -0.217,
+      "backtestSharpe": -1.069,
+      "backtestDrawdown": 0.275,
+      "backtestMarket": "7 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "ARBUSDT",
+        "GMXUSDT",
+        "OPUSDT"
+      ]
     },
     {
       "fullName": "x89/Solana-Arbitrage-Bot",
@@ -281,7 +312,23 @@
       "socialScore": 75.8,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.467,
-      "mentions": 15
+      "mentions": 15,
+      "backtestable": true,
+      "backtestReturn": -0.243,
+      "backtestSharpe": -1.074,
+      "backtestDrawdown": 0.304,
+      "backtestMarket": "8 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "Drakkar-Software/OctoBot",
@@ -308,7 +355,23 @@
       "socialScore": 73.6,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.462,
-      "mentions": 13
+      "mentions": 13,
+      "backtestable": true,
+      "backtestReturn": -0.243,
+      "backtestSharpe": -1.074,
+      "backtestDrawdown": 0.304,
+      "backtestMarket": "8 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "coffellas-cto/Solana-Copy-Trading-Bot",
@@ -334,7 +397,8 @@
       "socialScore": 66.4,
       "buzzVerdict": "neutral",
       "profitRatio": 0.444,
-      "mentions": 9
+      "mentions": 9,
+      "backtestable": false
     },
     {
       "fullName": "chainstacklabs/pumpfun-bonkfun-bot",
@@ -360,7 +424,8 @@
       "socialScore": 77.2,
       "buzzVerdict": "neutral",
       "profitRatio": 0.6,
-      "mentions": 15
+      "mentions": 15,
+      "backtestable": false
     },
     {
       "fullName": "WSOL12/Solana-Arbitrage-Bot",
@@ -384,7 +449,8 @@
       "socialScore": 68.8,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.429,
-      "mentions": 7
+      "mentions": 7,
+      "backtestable": false
     },
     {
       "fullName": "katlogic/solana-arbitrage-bot",
@@ -410,7 +476,8 @@
       "socialScore": 79.4,
       "buzzVerdict": "neutral",
       "profitRatio": 0.733,
-      "mentions": 15
+      "mentions": 15,
+      "backtestable": false
     },
     {
       "fullName": "hanshaze/solana-sniper-copy-mev-trading-bot",
@@ -436,7 +503,8 @@
       "socialScore": 71.6,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.5,
-      "mentions": 8
+      "mentions": 8,
+      "backtestable": false
     },
     {
       "fullName": "wilsonfreitas/awesome-quant",
@@ -463,7 +531,20 @@
       "socialScore": 74.4,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.6,
-      "mentions": 10
+      "mentions": 10,
+      "backtestable": true,
+      "backtestReturn": -0.184,
+      "backtestSharpe": -1.388,
+      "backtestDrawdown": 0.216,
+      "backtestMarket": "5 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "POLUSDT",
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "tradingstrategy-ai/trade-executor",
@@ -487,7 +568,8 @@
       "socialScore": 67.2,
       "buzzVerdict": "neutral",
       "profitRatio": 0.444,
-      "mentions": 9
+      "mentions": 9,
+      "backtestable": false
     },
     {
       "fullName": "alsk1992/CloddsBot",
@@ -529,7 +611,29 @@
       "socialScore": 46.8,
       "buzzVerdict": "scam-risk",
       "profitRatio": 0,
-      "mentions": 4
+      "mentions": 4,
+      "backtestable": true,
+      "backtestReturn": -0.185,
+      "backtestSharpe": -1.065,
+      "backtestDrawdown": 0.242,
+      "backtestMarket": "14 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "BNBUSDT",
+        "CAKEUSDT",
+        "POLUSDT",
+        "ARBUSDT",
+        "GMXUSDT",
+        "OPUSDT",
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "gianlucamazza/solana-mmaker",
@@ -553,7 +657,19 @@
       "socialScore": 79.8,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.688,
-      "mentions": 16
+      "mentions": 16,
+      "backtestable": true,
+      "backtestReturn": -0.202,
+      "backtestSharpe": -1.268,
+      "backtestDrawdown": 0.242,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "ethpandaops/ethereum-package",
@@ -575,7 +691,8 @@
       "socialScore": 80.3,
       "buzzVerdict": "neutral",
       "profitRatio": 0.737,
-      "mentions": 19
+      "mentions": 19,
+      "backtestable": false
     },
     {
       "fullName": "YZYLAB/solana-trade-bot",
@@ -600,7 +717,8 @@
       "socialScore": 76.3,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.643,
-      "mentions": 14
+      "mentions": 14,
+      "backtestable": false
     },
     {
       "fullName": "nelso0/barbotine-arbitrage-bot",
@@ -621,7 +739,8 @@
       "socialScore": 76.1,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.667,
-      "mentions": 6
+      "mentions": 6,
+      "backtestable": false
     },
     {
       "fullName": "ChangeYourself0613/Solana-Arbitrage-Bot",
@@ -651,7 +770,8 @@
       "socialScore": 68.8,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.429,
-      "mentions": 7
+      "mentions": 7,
+      "backtestable": false
     },
     {
       "fullName": "nirholas/pump-fun-sdk",
@@ -673,7 +793,8 @@
       "socialScore": 80.5,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.667,
-      "mentions": 9
+      "mentions": 9,
+      "backtestable": false
     },
     {
       "fullName": "Devilla/eth-arbitrage",
@@ -693,7 +814,8 @@
       "socialScore": 61.5,
       "buzzVerdict": "neutral",
       "profitRatio": 0.333,
-      "mentions": 6
+      "mentions": 6,
+      "backtestable": false
     },
     {
       "fullName": "marksantiago290/Ethereum-MEV-BOT",
@@ -726,7 +848,21 @@
       "socialScore": 74,
       "buzzVerdict": "neutral",
       "profitRatio": 0.8,
-      "mentions": 5
+      "mentions": 5,
+      "backtestable": true,
+      "backtestReturn": -0.215,
+      "backtestSharpe": -0.668,
+      "backtestDrawdown": 0.306,
+      "backtestMarket": "6 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "BNBUSDT",
+        "CAKEUSDT"
+      ]
     },
     {
       "fullName": "zookyy/crypto-sniper",
@@ -755,7 +891,8 @@
       "socialScore": 46.7,
       "buzzVerdict": "neutral",
       "profitRatio": 0,
-      "mentions": 2
+      "mentions": 2,
+      "backtestable": false
     },
     {
       "fullName": "Trading-GPT/Polymarket-trading-bot",
@@ -779,7 +916,8 @@
       "socialScore": 45.2,
       "buzzVerdict": "scam-risk",
       "profitRatio": 0,
-      "mentions": 2
+      "mentions": 2,
+      "backtestable": false
     },
     {
       "fullName": "radioman/solana-trading-bot",
@@ -803,7 +941,8 @@
       "socialScore": 77.4,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.571,
-      "mentions": 14
+      "mentions": 14,
+      "backtestable": false
     },
     {
       "fullName": "paco0x/amm-arbitrageur",
@@ -832,7 +971,8 @@
       "socialScore": 72.8,
       "buzzVerdict": "neutral",
       "profitRatio": 0.636,
-      "mentions": 11
+      "mentions": 11,
+      "backtestable": false
     },
     {
       "fullName": "Rabnail-SOL/Solana-Raydium-Volume-Bot",
@@ -857,7 +997,8 @@
       "socialScore": 75,
       "buzzVerdict": "neutral",
       "profitRatio": 0.636,
-      "mentions": 11
+      "mentions": 11,
+      "backtestable": false
     },
     {
       "fullName": "vincentkoc/dexscraper",
@@ -878,7 +1019,8 @@
       "socialScore": 75.5,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.5,
-      "mentions": 14
+      "mentions": 14,
+      "backtestable": false
     },
     {
       "fullName": "Cortex-AI-Quant/crypto-arbitrage-bot-automated-trading",
@@ -911,7 +1053,8 @@
       "socialScore": 74,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.75,
-      "mentions": 4
+      "mentions": 4,
+      "backtestable": false
     },
     {
       "fullName": "whisdev/flash-loan-trading-bot",
@@ -940,7 +1083,8 @@
       "socialScore": 73.9,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 1,
-      "mentions": 1
+      "mentions": 1,
+      "backtestable": false
     },
     {
       "fullName": "warp-id/solana-trading-bot",
@@ -964,7 +1108,8 @@
       "socialScore": 74.3,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.556,
-      "mentions": 9
+      "mentions": 9,
+      "backtestable": false
     },
     {
       "fullName": "ARBProtocol/solana-jupiter-bot",
@@ -990,7 +1135,8 @@
       "socialScore": 61.8,
       "buzzVerdict": "neutral",
       "profitRatio": 0.25,
-      "mentions": 8
+      "mentions": 8,
+      "backtestable": false
     },
     {
       "fullName": "nirholas/cryptocurrency.cv",
@@ -1035,7 +1181,30 @@
       "socialScore": 69.8,
       "buzzVerdict": "neutral",
       "profitRatio": 0.556,
-      "mentions": 9
+      "mentions": 9,
+      "backtestable": true,
+      "backtestReturn": -0.185,
+      "backtestSharpe": -1.058,
+      "backtestDrawdown": 0.243,
+      "backtestMarket": "15 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "BNBUSDT",
+        "CAKEUSDT",
+        "POLUSDT",
+        "ARBUSDT",
+        "GMXUSDT",
+        "OPUSDT",
+        "AVAXUSDT",
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "cutupdev/Solana-Copytrading-bot",
@@ -1060,7 +1229,8 @@
       "socialScore": 77,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.667,
-      "mentions": 6
+      "mentions": 6,
+      "backtestable": false
     },
     {
       "fullName": "cypherpunk-symposium/dark-forest-toolkit",
@@ -1096,7 +1266,8 @@
       "socialScore": 69.4,
       "buzzVerdict": "neutral",
       "profitRatio": 0.444,
-      "mentions": 9
+      "mentions": 9,
+      "backtestable": false
     },
     {
       "fullName": "gweidart/alpha-evm-dex-bot",
@@ -1123,7 +1294,16 @@
       "socialScore": 76.6,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.444,
-      "mentions": 9
+      "mentions": 9,
+      "backtestable": true,
+      "backtestReturn": -0.114,
+      "backtestSharpe": -1.867,
+      "backtestDrawdown": 0.114,
+      "backtestMarket": "1 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "POLUSDT"
+      ]
     },
     {
       "fullName": "CarlosIbCu/polymarket-kalshi-btc-arbitrage-bot",
@@ -1143,7 +1323,8 @@
       "socialScore": 75,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.5,
-      "mentions": 12
+      "mentions": 12,
+      "backtestable": false
     },
     {
       "fullName": "akshay-rakheja/arbitrage-alpaca",
@@ -1171,7 +1352,20 @@
       "socialScore": 73.7,
       "buzzVerdict": "hype-profitable",
       "profitRatio": 0.545,
-      "mentions": 11
+      "mentions": 11,
+      "backtestable": true,
+      "backtestReturn": -0.251,
+      "backtestSharpe": -1.077,
+      "backtestDrawdown": 0.315,
+      "backtestMarket": "5 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "POLUSDT"
+      ]
     },
     {
       "fullName": "damartripamungkas/botdexdamar",
@@ -1195,7 +1389,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-02-02T11:56:43Z"
+      "updatedAt": "2024-02-02T11:56:43Z",
+      "backtestable": false
     },
     {
       "fullName": "hodlwarden/solana-arbitrage-bot",
@@ -1216,7 +1411,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-02-20T23:35:45Z"
+      "updatedAt": "2026-02-20T23:35:45Z",
+      "backtestable": false
     },
     {
       "fullName": "0xalberto/solana-raydium-pumpfun-sniper-Rust",
@@ -1236,7 +1432,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-01T10:14:21Z"
+      "updatedAt": "2025-09-01T10:14:21Z",
+      "backtestable": false
     },
     {
       "fullName": "0xTaoDev/jupiter-python-cli",
@@ -1257,7 +1454,19 @@
         "dca"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-04-08T15:54:38Z"
+      "updatedAt": "2024-04-08T15:54:38Z",
+      "backtestable": true,
+      "backtestReturn": -0.344,
+      "backtestSharpe": -0.342,
+      "backtestDrawdown": 0.601,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "dca",
+      "backtestAssets": [
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "Neutral-Debug/Mexc-Trading-Bot",
@@ -1277,7 +1486,16 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-27T19:40:00Z"
+      "updatedAt": "2026-03-27T19:40:00Z",
+      "backtestable": true,
+      "backtestReturn": -0.114,
+      "backtestSharpe": -1.867,
+      "backtestDrawdown": 0.114,
+      "backtestMarket": "1 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "POLUSDT"
+      ]
     },
     {
       "fullName": "cjthoma1/flashswap-arbitrage-avalanche",
@@ -1297,7 +1515,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-02-04T01:07:21Z"
+      "updatedAt": "2023-02-04T01:07:21Z",
+      "backtestable": false
     },
     {
       "fullName": "AleRapchan/flash-swap-arbitrage-bot",
@@ -1321,7 +1540,19 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-10-30T01:43:26Z"
+      "updatedAt": "2021-10-30T01:43:26Z",
+      "backtestable": true,
+      "backtestReturn": -0.285,
+      "backtestSharpe": -0.88,
+      "backtestDrawdown": 0.365,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT"
+      ]
     },
     {
       "fullName": "solidquant/mev-templates",
@@ -1346,7 +1577,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-11-08T14:33:34Z"
+      "updatedAt": "2023-11-08T14:33:34Z",
+      "backtestable": false
     },
     {
       "fullName": "johngrantuk/aaveFlashLoan",
@@ -1369,7 +1601,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-12-11T12:33:14Z"
+      "updatedAt": "2022-12-11T12:33:14Z",
+      "backtestable": false
     },
     {
       "fullName": "MarilynClarke/Hyperliquid-Copy-Trading-Bot",
@@ -1383,7 +1616,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-22T01:05:41Z"
+      "updatedAt": "2026-05-22T01:05:41Z",
+      "backtestable": false
     },
     {
       "fullName": "Rezzecup/whale-wallet-mirror-copy-trader",
@@ -1413,7 +1647,8 @@
         "copy-trading"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-16T01:53:06Z"
+      "updatedAt": "2026-03-16T01:53:06Z",
+      "backtestable": false
     },
     {
       "fullName": "Nachoxt17/Arbitrage-Bot-between-UniSwap-and-SushiSwap-with-FlashLoans",
@@ -1435,7 +1670,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-07-04T01:37:07Z"
+      "updatedAt": "2021-07-04T01:37:07Z",
+      "backtestable": false
     },
     {
       "fullName": "ChainBuff/open-sol-bot",
@@ -1453,7 +1689,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-12-21T15:11:41Z"
+      "updatedAt": "2025-12-21T15:11:41Z",
+      "backtestable": false
     },
     {
       "fullName": "OnlyF0uR/EVM-Arbitrage-Bot",
@@ -1480,7 +1717,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-04-30T12:43:57Z"
+      "updatedAt": "2025-04-30T12:43:57Z",
+      "backtestable": false
     },
     {
       "fullName": "enarjord/passivbot",
@@ -1494,7 +1732,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T17:23:42Z"
+      "updatedAt": "2026-06-04T17:23:42Z",
+      "backtestable": false
     },
     {
       "fullName": "zkOSAI/hyperliquid-copy-trading-bot",
@@ -1508,7 +1747,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-07T17:44:50Z"
+      "updatedAt": "2026-05-07T17:44:50Z",
+      "backtestable": false
     },
     {
       "fullName": "moss-site/moss-trade-bot-skills",
@@ -1522,7 +1762,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-02T10:10:27Z"
+      "updatedAt": "2026-06-02T10:10:27Z",
+      "backtestable": false
     },
     {
       "fullName": "Bot80926/swap-arbitrage-bot",
@@ -1540,7 +1781,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-05-02T14:55:51Z"
+      "updatedAt": "2023-05-02T14:55:51Z",
+      "backtestable": false
     },
     {
       "fullName": "xlev-v/Hyperliquid-Trading-Bot",
@@ -1562,7 +1804,16 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-27T19:51:42Z"
+      "updatedAt": "2026-03-27T19:51:42Z",
+      "backtestable": true,
+      "backtestReturn": -0.114,
+      "backtestSharpe": -1.867,
+      "backtestDrawdown": 0.114,
+      "backtestMarket": "1 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "POLUSDT"
+      ]
     },
     {
       "fullName": "ogwurujohnson/arbitrage-bot",
@@ -1583,7 +1834,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-05-31T13:01:21Z"
+      "updatedAt": "2021-05-31T13:01:21Z",
+      "backtestable": false
     },
     {
       "fullName": "nmweaver/soltrade",
@@ -1601,7 +1853,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-11-22T20:52:55Z"
+      "updatedAt": "2025-11-22T20:52:55Z",
+      "backtestable": false
     },
     {
       "fullName": "FURiOus-ParADox/bsc-bnb-sniper-bot",
@@ -1620,7 +1873,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-06T14:58:16Z"
+      "updatedAt": "2026-05-06T14:58:16Z",
+      "backtestable": false
     },
     {
       "fullName": "urani-trade/solana-mev-agent-py",
@@ -1642,7 +1896,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-09-06T09:34:21Z"
+      "updatedAt": "2024-09-06T09:34:21Z",
+      "backtestable": false
     },
     {
       "fullName": "manuelinfosec/flash-arb-bot",
@@ -1669,7 +1924,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-09-23T23:40:00Z"
+      "updatedAt": "2022-09-23T23:40:00Z",
+      "backtestable": false
     },
     {
       "fullName": "6eer/uniswap-sushiswap-arbitrage-bot",
@@ -1691,7 +1947,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-12-30T23:10:51Z"
+      "updatedAt": "2021-12-30T23:10:51Z",
+      "backtestable": false
     },
     {
       "fullName": "gebob19/uniswap-v3-flashswap",
@@ -1709,7 +1966,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-01-07T13:22:44Z"
+      "updatedAt": "2022-01-07T13:22:44Z",
+      "backtestable": false
     },
     {
       "fullName": "TreeCityWes/Pump-Fun-Trading-Bot-Solana",
@@ -1727,7 +1985,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-08-02T14:26:48Z"
+      "updatedAt": "2024-08-02T14:26:48Z",
+      "backtestable": false
     },
     {
       "fullName": "llllllilllll/Kalshi-Trade-Bot",
@@ -1745,7 +2004,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-27T19:46:56Z"
+      "updatedAt": "2026-03-27T19:46:56Z",
+      "backtestable": false
     },
     {
       "fullName": "bmino/binance-triangle-arbitrage",
@@ -1763,7 +2023,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-12-07T18:00:50Z"
+      "updatedAt": "2022-12-07T18:00:50Z",
+      "backtestable": false
     },
     {
       "fullName": "fendouai/ArbitrageBot",
@@ -1781,7 +2042,8 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-09-03T09:01:27Z"
+      "updatedAt": "2022-09-03T09:01:27Z",
+      "backtestable": false
     },
     {
       "fullName": "henrytirla/Solana-Trading-Bot",
@@ -1799,7 +2061,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-02-15T11:34:17Z"
+      "updatedAt": "2025-02-15T11:34:17Z",
+      "backtestable": false
     },
     {
       "fullName": "tarik0/DexEqualizer",
@@ -1824,7 +2087,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-03-04T22:32:57Z"
+      "updatedAt": "2023-03-04T22:32:57Z",
+      "backtestable": false
     },
     {
       "fullName": "olegmitrakhovich/Defi-Arb-Bot",
@@ -1843,7 +2107,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2020-09-01T15:07:27Z"
+      "updatedAt": "2020-09-01T15:07:27Z",
+      "backtestable": false
     },
     {
       "fullName": "NadirAliOfficial/x-sniper-bot",
@@ -1867,7 +2132,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T01:49:55Z"
+      "updatedAt": "2026-06-04T01:49:55Z",
+      "backtestable": false
     },
     {
       "fullName": "yampiihansLab/hyperliquid-copy-trading-bot",
@@ -1881,7 +2147,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-28T12:23:28Z"
+      "updatedAt": "2026-05-28T12:23:28Z",
+      "backtestable": false
     },
     {
       "fullName": "personal-coding/Live-Sports-Arbitrage-Bet-Finder",
@@ -1897,7 +2164,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-11-25T00:26:13Z"
+      "updatedAt": "2023-11-25T00:26:13Z",
+      "backtestable": false
     },
     {
       "fullName": "DangerAcorn/pumpfun-tools",
@@ -1917,7 +2185,8 @@
         "frontrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-10-02T13:20:59Z"
+      "updatedAt": "2025-10-02T13:20:59Z",
+      "backtestable": false
     },
     {
       "fullName": "MfaXyz/Crypto-Triangular-Arbitrage-Bot",
@@ -1933,7 +2202,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-05-03T07:51:59Z"
+      "updatedAt": "2025-05-03T07:51:59Z",
+      "backtestable": false
     },
     {
       "fullName": "wardbradt/peregrine",
@@ -1949,7 +2219,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-06-28T20:23:52Z"
+      "updatedAt": "2021-06-28T20:23:52Z",
+      "backtestable": false
     },
     {
       "fullName": "nicholashc/AtomicArbBot",
@@ -1969,7 +2240,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-12-25T00:02:57Z"
+      "updatedAt": "2021-12-25T00:02:57Z",
+      "backtestable": false
     },
     {
       "fullName": "aiomev/ETHEREUM-MEV-BOT",
@@ -1993,7 +2265,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-06-11T16:51:34Z"
+      "updatedAt": "2025-06-11T16:51:34Z",
+      "backtestable": false
     },
     {
       "fullName": "aitradingbotspro/ai-automated-trading-bot",
@@ -2007,7 +2280,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-14T10:50:15Z"
+      "updatedAt": "2026-03-14T10:50:15Z",
+      "backtestable": false
     },
     {
       "fullName": "kruglov-dmitry/crypto_crawler",
@@ -2025,7 +2299,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2019-09-17T06:23:50Z"
+      "updatedAt": "2019-09-17T06:23:50Z",
+      "backtestable": false
     },
     {
       "fullName": "leionion/solana-new-pair-sniper-jupiter-v6",
@@ -2047,7 +2322,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-16T08:19:46Z"
+      "updatedAt": "2026-03-16T08:19:46Z",
+      "backtestable": false
     },
     {
       "fullName": "andreottohst/jupiter-token-sniper-solana-sniper-bot",
@@ -2068,7 +2344,19 @@
         "dca"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-04-11T20:32:53Z"
+      "updatedAt": "2024-04-11T20:32:53Z",
+      "backtestable": true,
+      "backtestReturn": -0.344,
+      "backtestSharpe": -0.342,
+      "backtestDrawdown": 0.601,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "dca",
+      "backtestAssets": [
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "andrei-zgirvaci/Arbitrage-Bot",
@@ -2084,7 +2372,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-07-22T09:08:14Z"
+      "updatedAt": "2023-07-22T09:08:14Z",
+      "backtestable": false
     },
     {
       "fullName": "paperswithbacktest/awesome-systematic-trading",
@@ -2101,7 +2390,8 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-01-22T07:49:32Z"
+      "updatedAt": "2025-01-22T07:49:32Z",
+      "backtestable": false
     },
     {
       "fullName": "mooncitydev/solana-arbitrage-bot-master",
@@ -2122,7 +2412,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-08-31T06:25:05Z"
+      "updatedAt": "2025-08-31T06:25:05Z",
+      "backtestable": false
     },
     {
       "fullName": "Rezzecup/anti-mev-private-rpc-wrapper",
@@ -2141,7 +2432,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-14T08:45:59Z"
+      "updatedAt": "2026-04-14T08:45:59Z",
+      "backtestable": false
     },
     {
       "fullName": "hzjken/crypto-arbitrage-framework",
@@ -2157,7 +2449,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2019-09-03T07:01:46Z"
+      "updatedAt": "2019-09-03T07:01:46Z",
+      "backtestable": false
     },
     {
       "fullName": "modagavr/pancake-wizard",
@@ -2171,7 +2464,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-03-15T06:24:49Z"
+      "updatedAt": "2023-03-15T06:24:49Z",
+      "backtestable": false
     },
     {
       "fullName": "chainstacklabs/hyperliquid-trading-bot",
@@ -2185,7 +2479,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-19T20:53:59Z"
+      "updatedAt": "2026-05-19T20:53:59Z",
+      "backtestable": false
     },
     {
       "fullName": "AlexRubik/rude-bot-solana",
@@ -2203,7 +2498,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-02-21T01:27:29Z"
+      "updatedAt": "2025-02-21T01:27:29Z",
+      "backtestable": false
     },
     {
       "fullName": "freesparrowrob/dex-arbitrage-bot",
@@ -2224,7 +2520,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-10-09T01:00:57Z"
+      "updatedAt": "2024-10-09T01:00:57Z",
+      "backtestable": false
     },
     {
       "fullName": "ZainAchak/DeFi_PanCakeSwapBot",
@@ -2238,7 +2535,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-03-04T01:53:55Z"
+      "updatedAt": "2023-03-04T01:53:55Z",
+      "backtestable": false
     },
     {
       "fullName": "HintikkaKimmo/surebet",
@@ -2254,7 +2552,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-02-06T03:17:32Z"
+      "updatedAt": "2026-02-06T03:17:32Z",
+      "backtestable": false
     },
     {
       "fullName": "ExchangeUnion/market-maker-bot",
@@ -2271,7 +2570,8 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-01-06T02:32:13Z"
+      "updatedAt": "2023-01-06T02:32:13Z",
+      "backtestable": false
     },
     {
       "fullName": "Scott-778/coinmarketcap-sniper-bot",
@@ -2285,7 +2585,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-08-21T19:41:46Z"
+      "updatedAt": "2022-08-21T19:41:46Z",
+      "backtestable": false
     },
     {
       "fullName": "MrFatoni/pancakeswap-sniping-bot",
@@ -2299,7 +2600,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-06-07T10:35:39Z"
+      "updatedAt": "2021-06-07T10:35:39Z",
+      "backtestable": false
     },
     {
       "fullName": "cniperbot/sniperbot",
@@ -2313,7 +2615,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-01-06T20:13:46Z"
+      "updatedAt": "2024-01-06T20:13:46Z",
+      "backtestable": false
     },
     {
       "fullName": "thalesphilipi/polyalpha-copybot",
@@ -2334,7 +2637,8 @@
         "copy-trading"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-21T13:35:37Z"
+      "updatedAt": "2026-03-21T13:35:37Z",
+      "backtestable": false
     },
     {
       "fullName": "DexSniping/DexSniping-BSC-ERC20-Telegram-Alerts",
@@ -2348,7 +2652,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-09-24T10:00:20Z"
+      "updatedAt": "2024-09-24T10:00:20Z",
+      "backtestable": false
     },
     {
       "fullName": "aicoincom/coinos-skills",
@@ -2362,7 +2667,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-03T03:34:56Z"
+      "updatedAt": "2026-06-03T03:34:56Z",
+      "backtestable": false
     },
     {
       "fullName": "cypherpunk-symposium/searcher-lionswap-py",
@@ -2382,7 +2688,8 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-10-15T03:04:18Z"
+      "updatedAt": "2024-10-15T03:04:18Z",
+      "backtestable": false
     },
     {
       "fullName": "valamicorp/top100token-ape-bot",
@@ -2396,7 +2703,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-05-15T18:07:28Z"
+      "updatedAt": "2023-05-15T18:07:28Z",
+      "backtestable": false
     },
     {
       "fullName": "kirti-bagul/Bot-Service-Library",
@@ -2417,7 +2725,8 @@
         "volume-bot"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T17:54:21Z"
+      "updatedAt": "2026-06-04T17:54:21Z",
+      "backtestable": false
     },
     {
       "fullName": "MemeSnipe/Free-Solana-Sniper-Memecoins-Bot-2026",
@@ -2437,7 +2746,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-24T21:07:07Z"
+      "updatedAt": "2026-03-24T21:07:07Z",
+      "backtestable": false
     },
     {
       "fullName": "kallie45s/hyperliquid-trading-bot",
@@ -2451,7 +2761,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-12-10T18:31:01Z"
+      "updatedAt": "2025-12-10T18:31:01Z",
+      "backtestable": false
     },
     {
       "fullName": "kevinleestites2-dev/PolygonSniper",
@@ -2472,7 +2783,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-24T02:33:36Z"
+      "updatedAt": "2026-05-24T02:33:36Z",
+      "backtestable": false
     },
     {
       "fullName": "owklama/profitable-flashloans",
@@ -2497,7 +2809,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-15T21:16:44Z"
+      "updatedAt": "2026-04-15T21:16:44Z",
+      "backtestable": false
     },
     {
       "fullName": "gtsigner/bsc-swap-autotrade-bot-v1",
@@ -2519,7 +2832,8 @@
         "arbitrage"
       ],
       "redFlagCount": 1,
-      "updatedAt": "2021-05-29T03:06:41Z"
+      "updatedAt": "2021-05-29T03:06:41Z",
+      "backtestable": false
     },
     {
       "fullName": "Jackhuang166/hyberliquid-arbitrage-bot",
@@ -2533,7 +2847,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-26T09:19:51Z"
+      "updatedAt": "2026-04-26T09:19:51Z",
+      "backtestable": false
     },
     {
       "fullName": "declansx/sports-prediction-market-aggregator",
@@ -2549,7 +2864,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T18:52:13Z"
+      "updatedAt": "2026-06-04T18:52:13Z",
+      "backtestable": false
     },
     {
       "fullName": "mnedelchev-vn/pancakeswap-sniper-bot",
@@ -2563,7 +2879,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-04-13T13:41:44Z"
+      "updatedAt": "2022-04-13T13:41:44Z",
+      "backtestable": false
     },
     {
       "fullName": "uNDe347r7Ale-HiDDen/bsc-bnb-sniper-bot",
@@ -2582,7 +2899,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T19:06:24Z"
+      "updatedAt": "2026-06-04T19:06:24Z",
+      "backtestable": false
     },
     {
       "fullName": "CodeWithJoe2020/pancakeswapBot",
@@ -2596,7 +2914,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-10-17T08:11:55Z"
+      "updatedAt": "2021-10-17T08:11:55Z",
+      "backtestable": false
     },
     {
       "fullName": "deltartificial/mev-snipping-copytrader-go",
@@ -2618,7 +2937,8 @@
         "copy-trading"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-10-04T09:38:29Z"
+      "updatedAt": "2023-10-04T09:38:29Z",
+      "backtestable": false
     },
     {
       "fullName": "executium/api-version-2",
@@ -2637,7 +2957,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-07-31T03:46:37Z"
+      "updatedAt": "2021-07-31T03:46:37Z",
+      "backtestable": false
     },
     {
       "fullName": "MaxIsOntoSomething/Hyperliquid_Copy_Trader",
@@ -2651,7 +2972,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-03T13:35:52Z"
+      "updatedAt": "2026-06-03T13:35:52Z",
+      "backtestable": false
     },
     {
       "fullName": "viet64th2/Polymarket-trade-bot",
@@ -2670,7 +2992,8 @@
         "copy-trading"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-22T18:53:20Z"
+      "updatedAt": "2026-03-22T18:53:20Z",
+      "backtestable": false
     },
     {
       "fullName": "kaileycompact51/HyperLiquid-Claw",
@@ -2688,7 +3011,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T15:29:22Z"
+      "updatedAt": "2026-06-04T15:29:22Z",
+      "backtestable": false
     },
     {
       "fullName": "JayArrowz/PancakeTokenSniper",
@@ -2702,7 +3026,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-03-24T09:40:26Z"
+      "updatedAt": "2024-03-24T09:40:26Z",
+      "backtestable": false
     },
     {
       "fullName": "NorVirae/mev-triangular-arbitrage-bot-contract",
@@ -2722,7 +3047,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-03-04T14:39:45Z"
+      "updatedAt": "2023-03-04T14:39:45Z",
+      "backtestable": false
     },
     {
       "fullName": "CryptoGnome/LimitSwap",
@@ -2736,7 +3062,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-11-28T14:48:52Z"
+      "updatedAt": "2022-11-28T14:48:52Z",
+      "backtestable": false
     },
     {
       "fullName": "Nafidinara/bot-pancakeswap",
@@ -2750,7 +3077,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-08-09T08:35:06Z"
+      "updatedAt": "2023-08-09T08:35:06Z",
+      "backtestable": false
     },
     {
       "fullName": "riglr/riglr",
@@ -2774,7 +3102,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-13T03:11:42Z"
+      "updatedAt": "2026-05-13T03:11:42Z",
+      "backtestable": false
     },
     {
       "fullName": "hexnome/grpc-copy-trading-sniper-bot",
@@ -2797,7 +3126,8 @@
         "copy-trading"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-03-28T20:14:46Z"
+      "updatedAt": "2025-03-28T20:14:46Z",
+      "backtestable": false
     },
     {
       "fullName": "blkcn-dev/frontrun-pancakeswap-bot",
@@ -2811,7 +3141,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-07-09T12:09:13Z"
+      "updatedAt": "2021-07-09T12:09:13Z",
+      "backtestable": false
     },
     {
       "fullName": "0xStalin-eth/profitable_flashloans",
@@ -2830,7 +3161,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-10-31T17:18:51Z"
+      "updatedAt": "2022-10-31T17:18:51Z",
+      "backtestable": false
     },
     {
       "fullName": "jcb-hub/bot.sol",
@@ -2844,7 +3176,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-01T20:34:17Z"
+      "updatedAt": "2026-06-01T20:34:17Z",
+      "backtestable": false
     },
     {
       "fullName": "polyfrontlabs/polyfrontbot-client",
@@ -2864,7 +3197,8 @@
         "copy-trading"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-04T13:06:29Z"
+      "updatedAt": "2026-04-04T13:06:29Z",
+      "backtestable": false
     },
     {
       "fullName": "BitFancy/Solana-Mev-Bot-Optimize",
@@ -2888,7 +3222,19 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-02-03T14:34:14Z"
+      "updatedAt": "2026-02-03T14:34:14Z",
+      "backtestable": true,
+      "backtestReturn": -0.202,
+      "backtestSharpe": -1.268,
+      "backtestDrawdown": 0.242,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "SimSimButDifferent/HyperLiquidAlgoBot",
@@ -2902,7 +3248,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-22T03:36:37Z"
+      "updatedAt": "2026-05-22T03:36:37Z",
+      "backtestable": false
     },
     {
       "fullName": "haohaoi34/nexus-trade-bot",
@@ -2916,7 +3263,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-19T08:38:01Z"
+      "updatedAt": "2026-05-19T08:38:01Z",
+      "backtestable": false
     },
     {
       "fullName": "dragunovv/Pancakeswap_Sniper",
@@ -2930,7 +3278,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-03-21T21:14:22Z"
+      "updatedAt": "2022-03-21T21:14:22Z",
+      "backtestable": false
     },
     {
       "fullName": "gabrielfu/amm-arbitrage",
@@ -2952,7 +3301,19 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-08-09T02:47:49Z"
+      "updatedAt": "2022-08-09T02:47:49Z",
+      "backtestable": true,
+      "backtestReturn": -0.285,
+      "backtestSharpe": -0.88,
+      "backtestDrawdown": 0.365,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT"
+      ]
     },
     {
       "fullName": "diego-tobalina/PancakeSwapBot",
@@ -2966,7 +3327,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-12-16T12:01:56Z"
+      "updatedAt": "2024-12-16T12:01:56Z",
+      "backtestable": false
     },
     {
       "fullName": "sooryavas1328/Aave-Claw",
@@ -2982,7 +3344,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T15:33:22Z"
+      "updatedAt": "2026-06-04T15:33:22Z",
+      "backtestable": false
     },
     {
       "fullName": "khederkasem/solrunner-solana-frontrun",
@@ -3005,7 +3368,8 @@
         "copy-trading"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-07-02T15:42:18Z"
+      "updatedAt": "2024-07-02T15:42:18Z",
+      "backtestable": false
     },
     {
       "fullName": "nanette1/PancakeSwap-Sniper-Bot",
@@ -3019,7 +3383,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-06-19T12:40:22Z"
+      "updatedAt": "2023-06-19T12:40:22Z",
+      "backtestable": false
     },
     {
       "fullName": "dennohpeter/sandwicher",
@@ -3035,7 +3400,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-11-26T16:15:04Z"
+      "updatedAt": "2022-11-26T16:15:04Z",
+      "backtestable": false
     },
     {
       "fullName": "psdlt/roboape",
@@ -3049,7 +3415,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-07-23T13:53:02Z"
+      "updatedAt": "2021-07-23T13:53:02Z",
+      "backtestable": false
     },
     {
       "fullName": "ionic-typing/orbitron-polymarket-system",
@@ -3070,7 +3437,20 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-25T12:45:24Z"
+      "updatedAt": "2026-03-25T12:45:24Z",
+      "backtestable": true,
+      "backtestReturn": -0.251,
+      "backtestSharpe": -1.077,
+      "backtestDrawdown": 0.315,
+      "backtestMarket": "5 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "POLUSDT",
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT"
+      ]
     },
     {
       "fullName": "JaghataiV/Uniswap_arb_bot",
@@ -3089,7 +3469,8 @@
         "backrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-02-25T22:22:59Z"
+      "updatedAt": "2024-02-25T22:22:59Z",
+      "backtestable": false
     },
     {
       "fullName": "AzuReSUrGEfla/Trading-Bot_Mev_Local_PC",
@@ -3108,7 +3489,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-01-04T13:17:40Z"
+      "updatedAt": "2026-01-04T13:17:40Z",
+      "backtestable": false
     },
     {
       "fullName": "0x-sen/mev-bot-fraud",
@@ -3124,7 +3506,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-09-04T08:22:37Z"
+      "updatedAt": "2023-09-04T08:22:37Z",
+      "backtestable": false
     },
     {
       "fullName": "0xNoSystem/hyperliquid_rust_bot",
@@ -3138,7 +3521,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-17T09:22:43Z"
+      "updatedAt": "2026-05-17T09:22:43Z",
+      "backtestable": false
     },
     {
       "fullName": "sudiptab2100/PancakeSwapSnippingBot",
@@ -3152,7 +3536,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-08-04T15:11:23Z"
+      "updatedAt": "2021-08-04T15:11:23Z",
+      "backtestable": false
     },
     {
       "fullName": "uvuvOssas/hyperliquid-copy-trading-bot",
@@ -3166,7 +3551,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-05T10:47:44Z"
+      "updatedAt": "2026-05-05T10:47:44Z",
+      "backtestable": false
     },
     {
       "fullName": "SolidDevMain/Solidity-Bot-for-Arbitrage-on-Uniswap",
@@ -3190,7 +3576,8 @@
         "frontrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-11-16T13:52:48Z"
+      "updatedAt": "2022-11-16T13:52:48Z",
+      "backtestable": false
     },
     {
       "fullName": "garciia28/CoinMarketCapSniper",
@@ -3204,7 +3591,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-07-01T19:56:18Z"
+      "updatedAt": "2024-07-01T19:56:18Z",
+      "backtestable": false
     },
     {
       "fullName": "Drakkar-Software/OctoBot-Market-Making",
@@ -3218,7 +3606,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-30T06:25:12Z"
+      "updatedAt": "2026-03-30T06:25:12Z",
+      "backtestable": false
     },
     {
       "fullName": "hitechlan1001/Ethereum_Mev_Bot_Uniswap-",
@@ -3245,7 +3634,8 @@
         "backrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-07-02T16:03:54Z"
+      "updatedAt": "2025-07-02T16:03:54Z",
+      "backtestable": false
     },
     {
       "fullName": "dexorynlabs/Hyperliquid-copy-trading-bot",
@@ -3259,7 +3649,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-24T08:19:45Z"
+      "updatedAt": "2026-04-24T08:19:45Z",
+      "backtestable": false
     },
     {
       "fullName": "machenxi/twitter-sniper-token-buyer-bot",
@@ -3281,7 +3672,8 @@
         "frontrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-28T13:00:42Z"
+      "updatedAt": "2025-09-28T13:00:42Z",
+      "backtestable": false
     },
     {
       "fullName": "Rezzecup/stablecoin-yield-aggregator-agent",
@@ -3295,7 +3687,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-14T08:48:42Z"
+      "updatedAt": "2026-04-14T08:48:42Z",
+      "backtestable": false
     },
     {
       "fullName": "GareBear99/Charm",
@@ -3316,7 +3709,16 @@
         "grid"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-22T19:49:38Z"
+      "updatedAt": "2026-04-22T19:49:38Z",
+      "backtestable": true,
+      "backtestReturn": -0.294,
+      "backtestSharpe": -0.786,
+      "backtestDrawdown": 0.361,
+      "backtestMarket": "1 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT"
+      ]
     },
     {
       "fullName": "cchighman/backrunner-rs",
@@ -3338,7 +3740,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-09-02T00:55:31Z"
+      "updatedAt": "2022-09-02T00:55:31Z",
+      "backtestable": false
     },
     {
       "fullName": "TopTrenDev/hyperliquid-trading-bot",
@@ -3352,7 +3755,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-13T15:44:54Z"
+      "updatedAt": "2026-05-13T15:44:54Z",
+      "backtestable": false
     },
     {
       "fullName": "codeesura/Ethereum-Arbitrage-Bot",
@@ -3373,7 +3777,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-05-06T10:35:25Z"
+      "updatedAt": "2023-05-06T10:35:25Z",
+      "backtestable": false
     },
     {
       "fullName": "web3spreads/quant-flow",
@@ -3387,7 +3792,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-05T08:32:12Z"
+      "updatedAt": "2026-05-05T08:32:12Z",
+      "backtestable": false
     },
     {
       "fullName": "NorVirae/mev-triangular-arbitrage-bot-contract-typescript",
@@ -3409,7 +3815,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-02-26T11:30:03Z"
+      "updatedAt": "2023-02-26T11:30:03Z",
+      "backtestable": false
     },
     {
       "fullName": "mooncitydev/asterdex-hl-trading-bot",
@@ -3423,7 +3830,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-11-25T20:02:43Z"
+      "updatedAt": "2025-11-25T20:02:43Z",
+      "backtestable": false
     },
     {
       "fullName": "LvcidPsyche/polymarket-arbitrage-bot",
@@ -3444,7 +3852,24 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-12T10:19:51Z"
+      "updatedAt": "2026-04-12T10:19:51Z",
+      "backtestable": true,
+      "backtestReturn": -0.229,
+      "backtestSharpe": -1.162,
+      "backtestDrawdown": 0.283,
+      "backtestMarket": "9 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "ETHUSDT",
+        "LINKUSDT",
+        "UNIUSDT",
+        "AAVEUSDT",
+        "POLUSDT",
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "syafiqeil/Rust-MEV-Builder",
@@ -3467,7 +3892,8 @@
         "backrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-01-17T14:41:01Z"
+      "updatedAt": "2026-01-17T14:41:01Z",
+      "backtestable": false
     },
     {
       "fullName": "Gokulceo/uniswap-v3-mev-bot",
@@ -3485,7 +3911,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T18:09:10Z"
+      "updatedAt": "2026-06-04T18:09:10Z",
+      "backtestable": false
     },
     {
       "fullName": "keidev-sol/Solana-Arbitrage-Bot",
@@ -3506,7 +3933,8 @@
         "volume-bot"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-10-20T08:54:41Z"
+      "updatedAt": "2025-10-20T08:54:41Z",
+      "backtestable": false
     },
     {
       "fullName": "SimSimButDifferent/UniV3FlashSwapDualArbBot",
@@ -3527,7 +3955,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-08-23T05:53:31Z"
+      "updatedAt": "2024-08-23T05:53:31Z",
+      "backtestable": false
     },
     {
       "fullName": "DavidRaffeil/DeFiPilot",
@@ -3543,7 +3972,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-02-18T13:38:35Z"
+      "updatedAt": "2026-02-18T13:38:35Z",
+      "backtestable": false
     },
     {
       "fullName": "memlabs-research/hyperliquid-trading-bot",
@@ -3557,7 +3987,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-12-31T18:18:17Z"
+      "updatedAt": "2025-12-31T18:18:17Z",
+      "backtestable": false
     },
     {
       "fullName": "athaser/arbitrum-arbitrage-bot",
@@ -3581,7 +4012,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-07-20T12:12:21Z"
+      "updatedAt": "2025-07-20T12:12:21Z",
+      "backtestable": false
     },
     {
       "fullName": "JaneKaraks/MavrickCryptoBot",
@@ -3609,7 +4041,8 @@
         "backrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-08-04T11:55:12Z"
+      "updatedAt": "2024-08-04T11:55:12Z",
+      "backtestable": false
     },
     {
       "fullName": "timo991/decentralized-trading-bot",
@@ -3636,7 +4069,8 @@
         "backrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-11-19T12:51:15Z"
+      "updatedAt": "2022-11-19T12:51:15Z",
+      "backtestable": false
     },
     {
       "fullName": "vibheksoni/axiomtrade-rs",
@@ -3650,7 +4084,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-08-14T17:29:31Z"
+      "updatedAt": "2025-08-14T17:29:31Z",
+      "backtestable": false
     },
     {
       "fullName": "jeffersonlicet/price-prediction-bot",
@@ -3664,7 +4099,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-02-09T02:26:45Z"
+      "updatedAt": "2022-02-09T02:26:45Z",
+      "backtestable": false
     },
     {
       "fullName": "jordan-max-dev/hyperliquid-trading-dca-bot",
@@ -3678,7 +4114,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-07T06:12:09Z"
+      "updatedAt": "2026-04-07T06:12:09Z",
+      "backtestable": false
     },
     {
       "fullName": "HarbhagwanDhaliwal/Allora_HyperLiquid_AutoTradeBot",
@@ -3692,7 +4129,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-03-06T06:16:24Z"
+      "updatedAt": "2025-03-06T06:16:24Z",
+      "backtestable": false
     },
     {
       "fullName": "lraunakl/AAVE-FLASHLOAN",
@@ -3706,7 +4144,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-05-22T23:51:59Z"
+      "updatedAt": "2025-05-22T23:51:59Z",
+      "backtestable": false
     },
     {
       "fullName": "anysniper/Frontend",
@@ -3720,7 +4159,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-10-02T18:31:53Z"
+      "updatedAt": "2023-10-02T18:31:53Z",
+      "backtestable": false
     },
     {
       "fullName": "machenxi/moonshot-bundler-bot",
@@ -3739,7 +4179,8 @@
         "volume-bot"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-10T07:58:08Z"
+      "updatedAt": "2025-09-10T07:58:08Z",
+      "backtestable": false
     },
     {
       "fullName": "manuelhb14/cake_uni_transaction_bot",
@@ -3753,7 +4194,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-07-06T05:00:23Z"
+      "updatedAt": "2021-07-06T05:00:23Z",
+      "backtestable": false
     },
     {
       "fullName": "botfi-app/botfi-wallet",
@@ -3769,7 +4211,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-04-17T06:53:21Z"
+      "updatedAt": "2024-04-17T06:53:21Z",
+      "backtestable": false
     },
     {
       "fullName": "Jackhuang166/grpc-copy-trading-sniper-farm-bot",
@@ -3783,7 +4226,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-16T07:40:45Z"
+      "updatedAt": "2025-09-16T07:40:45Z",
+      "backtestable": false
     },
     {
       "fullName": "keitaj/hyperliquid-bot",
@@ -3797,7 +4241,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-31T23:30:30Z"
+      "updatedAt": "2026-05-31T23:30:30Z",
+      "backtestable": false
     },
     {
       "fullName": "yourarj/token-listing-sniper-bot",
@@ -3811,7 +4256,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-09-12T22:13:00Z"
+      "updatedAt": "2023-09-12T22:13:00Z",
+      "backtestable": false
     },
     {
       "fullName": "ypingmoe/solana-copy-bot",
@@ -3825,7 +4271,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-03T03:01:39Z"
+      "updatedAt": "2026-06-03T03:01:39Z",
+      "backtestable": false
     },
     {
       "fullName": "machenxi/moonshot-sniper-bot",
@@ -3844,7 +4291,8 @@
         "volume-bot"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-10T07:40:40Z"
+      "updatedAt": "2025-09-10T07:40:40Z",
+      "backtestable": false
     },
     {
       "fullName": "ronaldslins2/hyperliquid-trading-bot",
@@ -3858,7 +4306,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-06-04T19:06:37Z"
+      "updatedAt": "2026-06-04T19:06:37Z",
+      "backtestable": false
     },
     {
       "fullName": "elaina-a11y/Prediction-Bot-Automated-Prediction-Running-Bot",
@@ -3872,7 +4321,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-04-06T14:56:29Z"
+      "updatedAt": "2023-04-06T14:56:29Z",
+      "backtestable": false
     },
     {
       "fullName": "proro485/zrx-arbitrage-bot",
@@ -3886,7 +4336,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-02-27T07:12:04Z"
+      "updatedAt": "2022-02-27T07:12:04Z",
+      "backtestable": false
     },
     {
       "fullName": "cryptoking-max/ultra-buy-sell-telegram-trading-bot",
@@ -3900,7 +4351,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-04-24T07:11:31Z"
+      "updatedAt": "2026-04-24T07:11:31Z",
+      "backtestable": false
     },
     {
       "fullName": "harry105/DeFl-B0T",
@@ -3924,7 +4376,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-07-29T22:24:08Z"
+      "updatedAt": "2024-07-29T22:24:08Z",
+      "backtestable": false
     },
     {
       "fullName": "evangervasio/triangular_arbitrage_fetcher",
@@ -3946,7 +4399,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-09-03T10:06:35Z"
+      "updatedAt": "2024-09-03T10:06:35Z",
+      "backtestable": false
     },
     {
       "fullName": "smhe00/uniswap-v3pool-auto-compound",
@@ -3966,7 +4420,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-02-20T16:38:34Z"
+      "updatedAt": "2026-02-20T16:38:34Z",
+      "backtestable": false
     },
     {
       "fullName": "haydenshively/Cafe-Chi",
@@ -3984,7 +4439,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-06-09T08:45:54Z"
+      "updatedAt": "2021-06-09T08:45:54Z",
+      "backtestable": false
     },
     {
       "fullName": "ding-ke/pancakeswap-bot",
@@ -3998,7 +4454,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-12-01T11:49:54Z"
+      "updatedAt": "2022-12-01T11:49:54Z",
+      "backtestable": false
     },
     {
       "fullName": "Code-Quang/pumpfun-raydium-sniper-jito-bundle-bot",
@@ -4019,7 +4476,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-02-27T15:10:41Z"
+      "updatedAt": "2025-02-27T15:10:41Z",
+      "backtestable": false
     },
     {
       "fullName": "redm3/HYPERLIQUID",
@@ -4033,7 +4491,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-05-22T01:36:05Z"
+      "updatedAt": "2023-05-22T01:36:05Z",
+      "backtestable": false
     },
     {
       "fullName": "benreichman/AAVE-V2-FlashLoan-Uniswap-V2-Arbitrage",
@@ -4054,7 +4513,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-10-04T18:44:03Z"
+      "updatedAt": "2022-10-04T18:44:03Z",
+      "backtestable": false
     },
     {
       "fullName": "tow3web3/agentinu",
@@ -4075,7 +4535,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2026-02-25T13:18:27Z"
+      "updatedAt": "2026-02-25T13:18:27Z",
+      "backtestable": false
     },
     {
       "fullName": "araalyn/MevB0T",
@@ -4099,7 +4560,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2024-01-26T09:30:24Z"
+      "updatedAt": "2024-01-26T09:30:24Z",
+      "backtestable": false
     },
     {
       "fullName": "Seabassfishyfish19/evm-arb-flashloan-sandwich-bot-v3",
@@ -4128,7 +4590,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 1,
-      "updatedAt": "2026-03-31T22:38:51Z"
+      "updatedAt": "2026-03-31T22:38:51Z",
+      "backtestable": false
     },
     {
       "fullName": "kimberloy33/UniswapV3",
@@ -4142,7 +4605,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-07-05T09:07:51Z"
+      "updatedAt": "2024-07-05T09:07:51Z",
+      "backtestable": false
     },
     {
       "fullName": "mooncitydev/solana-copytrading-bot",
@@ -4156,7 +4620,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-28T06:52:41Z"
+      "updatedAt": "2025-09-28T06:52:41Z",
+      "backtestable": false
     },
     {
       "fullName": "hoziertom44-arch/solana_pumpswap_migration_bot",
@@ -4170,7 +4635,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-05-16T02:06:52Z"
+      "updatedAt": "2026-05-16T02:06:52Z",
+      "backtestable": false
     },
     {
       "fullName": "dkirste/uniswap-flashloan-arbitrage",
@@ -4190,7 +4656,8 @@
         "flashloan-arb"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-02-16T22:24:32Z"
+      "updatedAt": "2025-02-16T22:24:32Z",
+      "backtestable": false
     },
     {
       "fullName": "Innovation-Web-3-0-Blockchain/Arbitrage-Bot",
@@ -4204,7 +4671,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-02-06T15:54:11Z"
+      "updatedAt": "2024-02-06T15:54:11Z",
+      "backtestable": false
     },
     {
       "fullName": "fairrustana/solana-rust-developer",
@@ -4223,7 +4691,19 @@
         "market-making"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-07-04T06:02:26Z"
+      "updatedAt": "2025-07-04T06:02:26Z",
+      "backtestable": true,
+      "backtestReturn": -0.202,
+      "backtestSharpe": -1.268,
+      "backtestDrawdown": 0.242,
+      "backtestMarket": "4 assets",
+      "backtestStrategy": "grid",
+      "backtestAssets": [
+        "SOLUSDT",
+        "JUPUSDT",
+        "RAYUSDT",
+        "WIFUSDT"
+      ]
     },
     {
       "fullName": "0xTan1319/hyperliquid-trading-bot-rust",
@@ -4237,7 +4717,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-28T10:24:14Z"
+      "updatedAt": "2025-09-28T10:24:14Z",
+      "backtestable": false
     },
     {
       "fullName": "ShchniederRiderTheWebDev/zeta-token-sniping-bot-pancakeswap",
@@ -4261,7 +4742,8 @@
         "frontrun"
       ],
       "redFlagCount": 1,
-      "updatedAt": "2026-04-05T11:45:08Z"
+      "updatedAt": "2026-04-05T11:45:08Z",
+      "backtestable": false
     },
     {
       "fullName": "DonnyThaEldarDev/generalized-pancakeswap-token-sniper",
@@ -4285,7 +4767,8 @@
         "frontrun"
       ],
       "redFlagCount": 1,
-      "updatedAt": "2026-04-05T12:44:02Z"
+      "updatedAt": "2026-04-05T12:44:02Z",
+      "backtestable": false
     },
     {
       "fullName": "IBQ-SUP/Solana-Flash-loan-bot",
@@ -4299,7 +4782,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-07-27T03:54:48Z"
+      "updatedAt": "2025-07-27T03:54:48Z",
+      "backtestable": false
     },
     {
       "fullName": "Laudueben71/pancakeswap-token-sniping-bot",
@@ -4324,7 +4808,8 @@
         "frontrun"
       ],
       "redFlagCount": 1,
-      "updatedAt": "2026-04-03T22:35:34Z"
+      "updatedAt": "2026-04-03T22:35:34Z",
+      "backtestable": false
     },
     {
       "fullName": "Sakaar-Sen/Hyperliquid-Trading-Bot",
@@ -4338,7 +4823,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-07-24T10:36:42Z"
+      "updatedAt": "2024-07-24T10:36:42Z",
+      "backtestable": false
     },
     {
       "fullName": "PopsRoll/EVM-Token-Sniping-Bot",
@@ -4357,7 +4843,8 @@
         "sniping"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2021-10-29T16:55:42Z"
+      "updatedAt": "2021-10-29T16:55:42Z",
+      "backtestable": false
     },
     {
       "fullName": "PhantomSnipers/solana-memecoin-sniper-bot",
@@ -4371,7 +4858,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-03-31T17:59:21Z"
+      "updatedAt": "2026-03-31T17:59:21Z",
+      "backtestable": false
     },
     {
       "fullName": "bamactls/MEV-UniswapBot",
@@ -4391,7 +4879,8 @@
         "backrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-01-11T10:03:55Z"
+      "updatedAt": "2025-01-11T10:03:55Z",
+      "backtestable": false
     },
     {
       "fullName": "xy0iatng/MEV-UniswapBot",
@@ -4411,7 +4900,8 @@
         "backrun"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2025-01-18T09:19:23Z"
+      "updatedAt": "2025-01-18T09:19:23Z",
+      "backtestable": false
     },
     {
       "fullName": "cypherpunk-symposium/cyph3rs-vue-js",
@@ -4425,7 +4915,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-10-15T03:54:35Z"
+      "updatedAt": "2024-10-15T03:54:35Z",
+      "backtestable": false
     },
     {
       "fullName": "guzus/tribe3-v1-liquidation-bot",
@@ -4443,7 +4934,8 @@
         "liquidation"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-09-02T07:03:17Z"
+      "updatedAt": "2023-09-02T07:03:17Z",
+      "backtestable": false
     },
     {
       "fullName": "ThisNewMark/perplobster",
@@ -4457,7 +4949,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2026-02-23T20:55:19Z"
+      "updatedAt": "2026-02-23T20:55:19Z",
+      "backtestable": false
     },
     {
       "fullName": "Babajikumaresan/MEV-Trade-Checker",
@@ -4473,7 +4966,8 @@
         "mev"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2023-05-02T08:48:57Z"
+      "updatedAt": "2023-05-02T08:48:57Z",
+      "backtestable": false
     },
     {
       "fullName": "adamvenord17/ethereum-arbitrage",
@@ -4487,7 +4981,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-01-07T16:05:49Z"
+      "updatedAt": "2022-01-07T16:05:49Z",
+      "backtestable": false
     },
     {
       "fullName": "ViktorVL584/DeFi-Flashloan-Arbitrage",
@@ -4501,7 +4996,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-02-12T19:18:28Z"
+      "updatedAt": "2025-02-12T19:18:28Z",
+      "backtestable": false
     },
     {
       "fullName": "akilibots/akili-grid",
@@ -4515,7 +5011,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-09-29T11:37:40Z"
+      "updatedAt": "2023-09-29T11:37:40Z",
+      "backtestable": false
     },
     {
       "fullName": "ericlewis966/abitrage-nodejs-1",
@@ -4531,7 +5028,8 @@
         "arbitrage"
       ],
       "redFlagCount": 0,
-      "updatedAt": "2022-02-19T15:15:44Z"
+      "updatedAt": "2022-02-19T15:15:44Z",
+      "backtestable": false
     },
     {
       "fullName": "unitmargaretaustin/Polymarket-copy-trading-bot",
@@ -4545,7 +5043,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-12-15T14:04:03Z"
+      "updatedAt": "2025-12-15T14:04:03Z",
+      "backtestable": false
     },
     {
       "fullName": "0xdoll/arbitrage_trading_bot",
@@ -4559,7 +5058,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-05-06T07:37:55Z"
+      "updatedAt": "2022-05-06T07:37:55Z",
+      "backtestable": false
     },
     {
       "fullName": "smartdev00/Sniper-Bot",
@@ -4573,7 +5073,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-07-21T01:52:50Z"
+      "updatedAt": "2025-07-21T01:52:50Z",
+      "backtestable": false
     },
     {
       "fullName": "D3G3Nerator/ArbitrageBot",
@@ -4587,7 +5088,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-07-21T11:30:56Z"
+      "updatedAt": "2021-07-21T11:30:56Z",
+      "backtestable": false
     },
     {
       "fullName": "TopTrenDev/twitter-sniper-bot",
@@ -4601,7 +5103,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-08-30T21:12:13Z"
+      "updatedAt": "2025-08-30T21:12:13Z",
+      "backtestable": false
     },
     {
       "fullName": "nolannbiron/arbitrage-ftm",
@@ -4615,7 +5118,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-03-02T16:56:35Z"
+      "updatedAt": "2022-03-02T16:56:35Z",
+      "backtestable": false
     },
     {
       "fullName": "KeyrockEU/rustfi-hackathon",
@@ -4629,7 +5133,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-09-15T12:45:53Z"
+      "updatedAt": "2022-09-15T12:45:53Z",
+      "backtestable": false
     },
     {
       "fullName": "bitquery/Solana-Sniper-Bot",
@@ -4643,7 +5148,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-05-16T17:45:09Z"
+      "updatedAt": "2024-05-16T17:45:09Z",
+      "backtestable": false
     },
     {
       "fullName": "buildwithcode888/Arbitrage-trading-bot",
@@ -4657,7 +5163,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-03-05T08:22:29Z"
+      "updatedAt": "2025-03-05T08:22:29Z",
+      "backtestable": false
     },
     {
       "fullName": "juliencrn/rust-web3-basics-tutorial",
@@ -4673,7 +5180,8 @@
       ],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-01-10T22:27:08Z"
+      "updatedAt": "2022-01-10T22:27:08Z",
+      "backtestable": false
     },
     {
       "fullName": "AnneCh/Flashloan_Arbitrage",
@@ -4687,7 +5195,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-08-19T11:31:17Z"
+      "updatedAt": "2022-08-19T11:31:17Z",
+      "backtestable": false
     },
     {
       "fullName": "ChangeYourself0613/Telegram-Trading-Bot",
@@ -4701,7 +5210,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-09-30T19:35:13Z"
+      "updatedAt": "2025-09-30T19:35:13Z",
+      "backtestable": false
     },
     {
       "fullName": "cynthiadaf/Flash-Loan-Arbitrage-Bot",
@@ -4715,7 +5225,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-08-19T16:46:26Z"
+      "updatedAt": "2024-08-19T16:46:26Z",
+      "backtestable": false
     },
     {
       "fullName": "akilibots/akili-tradingview",
@@ -4729,7 +5240,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-01-07T13:17:54Z"
+      "updatedAt": "2023-01-07T13:17:54Z",
+      "backtestable": false
     },
     {
       "fullName": "swain90/kyberunitradingbot",
@@ -4743,7 +5255,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-12-18T02:44:03Z"
+      "updatedAt": "2021-12-18T02:44:03Z",
+      "backtestable": false
     },
     {
       "fullName": "nazihkalo/ArbitrageBot",
@@ -4757,7 +5270,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2022-01-03T05:50:02Z"
+      "updatedAt": "2022-01-03T05:50:02Z",
+      "backtestable": false
     },
     {
       "fullName": "tannerang/FinalProject",
@@ -4771,7 +5285,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-02-05T15:55:53Z"
+      "updatedAt": "2024-02-05T15:55:53Z",
+      "backtestable": false
     },
     {
       "fullName": "Janmajayamall/FlashLoan-Arbitrage-Trading-Bot",
@@ -4785,7 +5300,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2021-06-29T04:37:33Z"
+      "updatedAt": "2021-06-29T04:37:33Z",
+      "backtestable": false
     },
     {
       "fullName": "akilibots/akili-oto",
@@ -4799,7 +5315,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2023-01-13T12:36:42Z"
+      "updatedAt": "2023-01-13T12:36:42Z",
+      "backtestable": false
     },
     {
       "fullName": "0xTan1319/Jupiter-Sniper-Bot-Solana",
@@ -4813,7 +5330,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-11-05T21:13:29Z"
+      "updatedAt": "2024-11-05T21:13:29Z",
+      "backtestable": false
     },
     {
       "fullName": "JulieGibbs/ethereum-arbitrage-bot",
@@ -4827,7 +5345,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-03-21T01:38:01Z"
+      "updatedAt": "2024-03-21T01:38:01Z",
+      "backtestable": false
     },
     {
       "fullName": "dream-423/mev-bot",
@@ -4841,7 +5360,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-03-23T12:42:32Z"
+      "updatedAt": "2025-03-23T12:42:32Z",
+      "backtestable": false
     },
     {
       "fullName": "Power-Howdy/flashloan-bot-ArbitrageAndLiquidation",
@@ -4855,7 +5375,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-01-09T13:34:00Z"
+      "updatedAt": "2025-01-09T13:34:00Z",
+      "backtestable": false
     },
     {
       "fullName": "tangm777/Solana-Sniper-bot",
@@ -4869,7 +5390,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-04-11T13:06:06Z"
+      "updatedAt": "2024-04-11T13:06:06Z",
+      "backtestable": false
     },
     {
       "fullName": "Jeanyuhs/swap_jup",
@@ -4883,7 +5405,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2024-03-30T22:53:42Z"
+      "updatedAt": "2024-03-30T22:53:42Z",
+      "backtestable": false
     },
     {
       "fullName": "kamaruno2/Solidify-Raydium-Sniper-AIO",
@@ -4897,7 +5420,8 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-02-20T16:49:14Z"
+      "updatedAt": "2025-02-20T16:49:14Z",
+      "backtestable": false
     },
     {
       "fullName": "Iluasarg/copytrading-bot",
@@ -4911,7 +5435,15 @@
       "dexes": [],
       "strategies": [],
       "redFlagCount": 0,
-      "updatedAt": "2025-04-22T13:14:14Z"
+      "updatedAt": "2025-04-22T13:14:14Z",
+      "backtestable": false
     }
-  ]
+  ],
+  "backtest": {
+    "available": true,
+    "simulated": true,
+    "generatedAt": "2026-06-05T18:45:15.646Z",
+    "evaluated": 22,
+    "note": "out-of-sample backtest on a per-chain proxy market; simulated, not real gains"
+  }
 }

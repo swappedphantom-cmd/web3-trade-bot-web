@@ -5,7 +5,7 @@ import type { Bot, Dataset } from "../lib/types"
 import { securityBadge, combinedRank } from "../lib/types"
 
 const PROFIT_STRATEGIES = ["arbitrage", "mev", "sniping", "flashloan-arb", "sandwich"]
-type Sort = "rank" | "score" | "buzz"
+type Sort = "rank" | "score" | "buzz" | "backtest"
 
 export default function BotExplorer({ data }: { data: Dataset }) {
   const [q, setQ] = useState("")
@@ -15,6 +15,7 @@ export default function BotExplorer({ data }: { data: Dataset }) {
   const [cleanOnly, setCleanOnly] = useState(false)
   const [formattedDate, setFormattedDate] = useState<string | null>(null)
   const hasSocial = !!data.social?.available
+  const hasBacktest = !!data.backtest?.available
   const [sort, setSort] = useState<Sort>(hasSocial ? "rank" : "score")
 
   // Format date on client only to avoid hydration mismatch
@@ -27,6 +28,10 @@ export default function BotExplorer({ data }: { data: Dataset }) {
   const comparator = useMemo(() => {
     if (sort === "buzz") return (a: Bot, b: Bot) => (b.socialScore ?? 0) - (a.socialScore ?? 0)
     if (sort === "rank") return (a: Bot, b: Bot) => combinedRank(b) - combinedRank(a)
+    if (sort === "backtest") {
+      const bt = (x: Bot) => (x.backtestable ? x.backtestReturn ?? -Infinity : -Infinity)
+      return (a: Bot, b: Bot) => bt(b) - bt(a)
+    }
     return (a: Bot, b: Bot) => b.botScore - a.botScore
   }, [sort])
 
@@ -63,6 +68,7 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           <Stat label="avec red flags" value={data.stats.flaggedBots} warn />
           <Stat label="chaînes" value={data.categories.chains.length} />
           <Stat label="stratégies" value={data.categories.strategies.length} />
+          {hasBacktest && <Stat label="backtestés" value={data.backtest!.evaluated} />}
         </div>
         {formattedDate && (
           <p className="generated">Dernière analyse : {formattedDate}</p>
@@ -71,6 +77,12 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           <p className="sim-banner">
             🔬 Le « buzz » X est actuellement <strong>simulé</strong> (mock) — branche un compte X pour des
             données réelles.
+          </p>
+        )}
+        {data.backtest?.simulated && (
+          <p className="sim-banner">
+            📈 Les « profits » sont des <strong>backtests simulés</strong> out-of-sample (marché proxy par
+            chaîne) — pas des gains réels. La plupart sont négatifs : le signal, pas la hype.
           </p>
         )}
       </header>
@@ -89,6 +101,7 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           {hasSocial && <option value="rank">Trier : rang (qualité + buzz)</option>}
           <option value="score">Trier : score qualité</option>
           {hasSocial && <option value="buzz">Trier : profit / buzz 🔥</option>}
+          {hasBacktest && <option value="backtest">Trier : profit backtest 📈</option>}
         </select>
         <label className="toggle">
           <input type="checkbox" checked={cleanOnly} onChange={(e) => setCleanOnly(e.target.checked)} />
@@ -185,7 +198,15 @@ function BotCard({ bot, rank }: { bot: Bot; rank: number }) {
         ))}
       </div>
       <div className="meta">
-        <span>⭐ {bot.stars.toLocaleString()}</span>
+        <span>⭐ {bot.stars.toLocaleString("fr-FR")}</span>
+        {bot.backtestable && typeof bot.backtestReturn === "number" && (
+          <span
+            className={`bt ${bot.backtestReturn >= 0 ? "bt-pos" : "bt-neg"}`}
+            title={`backtest simulé ${bot.backtestStrategy}@${bot.backtestMarket} · sharpe ${bot.backtestSharpe} · drawdown ${Math.round((bot.backtestDrawdown ?? 0) * 100)}%`}
+          >
+            📈 {(bot.backtestReturn * 100).toFixed(1)}% sim
+          </span>
+        )}
         {typeof bot.socialScore === "number" && bot.mentions ? (
           <span title={`${bot.mentions} mentions X · ${Math.round((bot.profitRatio ?? 0) * 100)}% claims de profit`}>
             🔥 buzz {bot.socialScore}

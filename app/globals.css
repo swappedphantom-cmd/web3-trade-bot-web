@@ -283,10 +283,21 @@ main {
 .meta {
   display: flex;
   justify-content: space-between;
+  gap: 8px;
   color: var(--muted);
   font-size: 13px;
   margin-top: auto;
   padding-top: 4px;
+}
+.bt {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.bt-pos {
+  color: #00d4a0;
+}
+.bt-neg {
+  color: #ff6b81;
 }
 .footer {
   margin-top: 40px;

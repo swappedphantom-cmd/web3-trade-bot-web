@@ -16,6 +16,13 @@ export interface Bot {
   buzzVerdict?: string
   profitRatio?: number
   mentions?: number
+  // Simulated out-of-sample backtest (present once `npm run enrich` has run)
+  backtestable?: boolean
+  backtestReturn?: number // fraction, e.g. -0.114 = -11.4% (simulated, not real)
+  backtestSharpe?: number
+  backtestDrawdown?: number
+  backtestMarket?: string
+  backtestStrategy?: string
 }
 
 export interface Dataset {
@@ -37,6 +44,12 @@ export interface Dataset {
     available: boolean
     simulated: boolean
     backend: string | null
+  }
+  backtest?: {
+    available: boolean
+    simulated: boolean
+    generatedAt: string | null
+    evaluated: number
   }
   bots: Bot[]
 }
