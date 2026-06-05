@@ -20,6 +20,8 @@ export interface Bot {
   backtestable?: boolean
   backtestReturn?: number // fraction, e.g. -0.114 = -11.4% (simulated, not real)
   backtestSharpe?: number
+  backtestSortino?: number
+  backtestExposure?: number // avg fraction of equity in the asset
   backtestDrawdown?: number
   backtestAlpha?: number // return minus buy & hold — does it beat holding?
   backtestWinRate?: number | null // fraction of winning trades (null if no closed trades)

@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { Fragment, useMemo, useState } from "react"
 import type { Bot } from "../../lib/types"
 
 type Key =
@@ -11,6 +11,7 @@ type Key =
   | "backtestTrades"
   | "backtestProfitFactor"
   | "backtestSharpe"
+  | "backtestSortino"
   | "backtestDrawdown"
 
 const pct = (x: number | null | undefined, signed = false) =>
@@ -30,15 +31,13 @@ const COLS: {
   { key: "backtestWinRate", label: "win", title: "part de trades gagnants", fmt: (b) => pct(b.backtestWinRate) },
   { key: "backtestTrades", label: "trades", title: "nombre de trades simulés", fmt: (b) => num(b.backtestTrades, 0) },
   { key: "backtestProfitFactor", label: "PF", title: "profit factor : gains/pertes réalisés", fmt: (b) => num(b.backtestProfitFactor, 1) },
-  { key: "backtestSharpe", label: "Sharpe", title: "Sharpe annualisé (risque-ajusté)", fmt: (b) => num(b.backtestSharpe, 2) },
+  { key: "backtestSharpe", label: "Sharpe", title: "Sharpe annualisé (volatilité totale)", fmt: (b) => num(b.backtestSharpe, 2) },
+  { key: "backtestSortino", label: "Sortino", title: "Sortino annualisé (risque baissier seul)", fmt: (b) => num(b.backtestSortino, 2) },
   { key: "backtestDrawdown", label: "drawdown", title: "pire perte pic-à-creux", fmt: (b) => pct(b.backtestDrawdown) },
   { key: "botScore", label: "score code", title: "qualité + sécurité du code", fmt: (b) => num(b.botScore, 0) },
 ]
 
-function Spark({ data }: { data?: number[] }) {
-  if (!data || data.length < 2) return <span className="muted">—</span>
-  const w = 88
-  const h = 26
+function spark(data: number[], w: number, h: number, sw = 1.5) {
   const pad = 3
   const min = Math.min(...data)
   const max = Math.max(...data)
@@ -51,20 +50,62 @@ function Spark({ data }: { data?: number[] }) {
     })
     .join(" ")
   const up = data[data.length - 1]! >= data[0]!
+  // baseline at value 1 (break-even)
+  const yBase = 1 >= min && 1 <= max ? h - pad - ((1 - min) / span) * (h - 2 * pad) : null
   return (
     <svg width={w} height={h} className="spark" viewBox={`0 0 ${w} ${h}`}>
-      <polyline points={pts} fill="none" stroke={up ? "#00d4a0" : "#ff6b81"} strokeWidth="1.5" />
+      {yBase != null && (
+        <line x1={pad} x2={w - pad} y1={yBase} y2={yBase} stroke="#3a3f52" strokeWidth="1" strokeDasharray="3 3" />
+      )}
+      <polyline points={pts} fill="none" stroke={up ? "#00d4a0" : "#ff6b81"} strokeWidth={sw} />
     </svg>
   )
 }
 
+function Spark({ data, big = false }: { data?: number[]; big?: boolean }) {
+  if (!data || data.length < 2) return <span className="muted">—</span>
+  return big ? spark(data, 360, 90, 2) : spark(data, 88, 26, 1.5)
+}
+
 const uniq = (xs: string[]) => [...new Set(xs)].sort()
+
+function Detail({ b }: { b: Bot }) {
+  const items: [string, string, string?][] = [
+    ["rendement", pct(b.backtestReturn, true), sign(b.backtestReturn)],
+    ["α vs hold", pct(b.backtestAlpha, true), sign(b.backtestAlpha)],
+    ["win rate", pct(b.backtestWinRate)],
+    ["trades", num(b.backtestTrades, 0)],
+    ["profit factor", num(b.backtestProfitFactor, 2)],
+    ["Sharpe", num(b.backtestSharpe, 2)],
+    ["Sortino", num(b.backtestSortino, 2)],
+    ["drawdown", pct(b.backtestDrawdown)],
+    ["exposition moy.", pct(b.backtestExposure)],
+    ["marché", `${b.backtestStrategy} · ${b.backtestMarket}`],
+  ]
+  return (
+    <div className="bt-detail">
+      <div className="bt-detail-chart">
+        <Spark data={b.backtestCurve} big />
+        <span className="muted">courbe d&apos;équité out-of-sample (base 100, moyenne multi-actifs)</span>
+      </div>
+      <div className="bt-detail-grid">
+        {items.map(([label, val, cls]) => (
+          <div key={label} className="bt-kv">
+            <span className="bt-kv-label">{label}</span>
+            <span className={`bt-kv-val ${cls ?? ""}`}>{val}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export default function BacktestTable({ bots }: { bots: Bot[] }) {
   const [key, setKey] = useState<Key>("backtestAlpha")
   const [dir, setDir] = useState<1 | -1>(-1)
   const [chain, setChain] = useState("")
   const [strat, setStrat] = useState("")
+  const [open, setOpen] = useState<string | null>(null)
 
   const chains = useMemo(() => uniq(bots.flatMap((b) => b.chains)), [bots])
   const strats = useMemo(() => uniq(bots.flatMap((b) => b.strategies)), [bots])
@@ -83,6 +124,7 @@ export default function BacktestTable({ bots }: { bots: Bot[] }) {
       setDir(-1)
     }
   }
+  const colSpan = 4 + COLS.length
 
   return (
     <>
@@ -114,14 +156,14 @@ export default function BacktestTable({ bots }: { bots: Bot[] }) {
             ✕ réinitialiser
           </button>
         )}
-        <span className="count">{rows.length} bot(s)</span>
+        <span className="count">{rows.length} bot(s) · clique une ligne pour le détail</span>
       </div>
 
       <div className="table-wrap">
         <table className="bt-table">
           <thead>
             <tr>
-              <th>#</th>
+              <th></th>
               <th className="left">bot</th>
               <th className="left">stratégie</th>
               <th>équité (oos)</th>
@@ -139,26 +181,43 @@ export default function BacktestTable({ bots }: { bots: Bot[] }) {
             </tr>
           </thead>
           <tbody>
-            {rows.map((b, i) => (
-              <tr key={b.fullName}>
-                <td className="muted">{i + 1}</td>
-                <td className="left">
-                  <a href={`https://github.com/${b.fullName}`} target="_blank" rel="noreferrer">
-                    {b.fullName}
-                  </a>
-                </td>
-                <td className="left muted">
-                  {b.backtestStrategy} · {b.backtestMarket}
-                </td>
-                <td>
-                  <Spark data={b.backtestCurve} />
-                </td>
-                {COLS.map((c) => (
-                  <td key={c.key} className={c.cls?.(b)}>
-                    {c.fmt(b)}
+            {rows.map((b) => (
+              <Fragment key={b.fullName}>
+                <tr
+                  className="bt-row"
+                  onClick={() => setOpen((o) => (o === b.fullName ? null : b.fullName))}
+                >
+                  <td className="muted">{open === b.fullName ? "▾" : "▸"}</td>
+                  <td className="left">
+                    <a
+                      href={`https://github.com/${b.fullName}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {b.fullName}
+                    </a>
                   </td>
-                ))}
-              </tr>
+                  <td className="left muted">
+                    {b.backtestStrategy} · {b.backtestMarket}
+                  </td>
+                  <td>
+                    <Spark data={b.backtestCurve} />
+                  </td>
+                  {COLS.map((c) => (
+                    <td key={c.key} className={c.cls?.(b)}>
+                      {c.fmt(b)}
+                    </td>
+                  ))}
+                </tr>
+                {open === b.fullName && (
+                  <tr className="bt-detail-row">
+                    <td colSpan={colSpan}>
+                      <Detail b={b} />
+                    </td>
+                  </tr>
+                )}
+              </Fragment>
             ))}
           </tbody>
         </table>
