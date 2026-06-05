@@ -193,7 +193,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.514,
+      "backtestWinRate": 0.74,
+      "backtestTrades": 25,
+      "backtestProfitFactor": 25.166
     },
     {
       "fullName": "sorasuzukidev/ethereum-bnb-mev-bot",
@@ -278,7 +282,11 @@
         "ARBUSDT",
         "GMXUSDT",
         "OPUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.368,
+      "backtestWinRate": 0.689,
+      "backtestTrades": 78,
+      "backtestProfitFactor": 17.125
     },
     {
       "fullName": "x89/Solana-Arbitrage-Bot",
@@ -328,7 +336,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.343,
+      "backtestWinRate": 0.659,
+      "backtestTrades": 75,
+      "backtestProfitFactor": 12.871
     },
     {
       "fullName": "Drakkar-Software/OctoBot",
@@ -371,7 +383,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.343,
+      "backtestWinRate": 0.659,
+      "backtestTrades": 75,
+      "backtestProfitFactor": 12.871
     },
     {
       "fullName": "coffellas-cto/Solana-Copy-Trading-Bot",
@@ -544,7 +560,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.521,
+      "backtestWinRate": 0.742,
+      "backtestTrades": 22,
+      "backtestProfitFactor": 20.177
     },
     {
       "fullName": "tradingstrategy-ai/trade-executor",
@@ -633,7 +653,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.394,
+      "backtestWinRate": 0.716,
+      "backtestTrades": 61,
+      "backtestProfitFactor": 15.946
     },
     {
       "fullName": "gianlucamazza/solana-mmaker",
@@ -669,7 +693,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.514,
+      "backtestWinRate": 0.74,
+      "backtestTrades": 25,
+      "backtestProfitFactor": 25.166
     },
     {
       "fullName": "ethpandaops/ethereum-package",
@@ -862,7 +890,11 @@
         "AAVEUSDT",
         "BNBUSDT",
         "CAKEUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.172,
+      "backtestWinRate": 0.628,
+      "backtestTrades": 116,
+      "backtestProfitFactor": 0.994
     },
     {
       "fullName": "zookyy/crypto-sniper",
@@ -1204,7 +1236,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.401,
+      "backtestWinRate": 0.722,
+      "backtestTrades": 58,
+      "backtestProfitFactor": 14.846
     },
     {
       "fullName": "cutupdev/Solana-Copytrading-bot",
@@ -1303,7 +1339,11 @@
       "backtestStrategy": "grid",
       "backtestAssets": [
         "POLUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.549,
+      "backtestWinRate": 0.75,
+      "backtestTrades": 10,
+      "backtestProfitFactor": 0.223
     },
     {
       "fullName": "CarlosIbCu/polymarket-kalshi-btc-arbitrage-bot",
@@ -1365,7 +1405,11 @@
         "UNIUSDT",
         "AAVEUSDT",
         "POLUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.247,
+      "backtestWinRate": 0.613,
+      "backtestTrades": 102,
+      "backtestProfitFactor": 0.506
     },
     {
       "fullName": "damartripamungkas/botdexdamar",
@@ -1466,7 +1510,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": -1.141,
+      "backtestWinRate": null,
+      "backtestTrades": 132,
+      "backtestProfitFactor": null
     },
     {
       "fullName": "Neutral-Debug/Mexc-Trading-Bot",
@@ -1495,7 +1543,11 @@
       "backtestStrategy": "grid",
       "backtestAssets": [
         "POLUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.549,
+      "backtestWinRate": 0.75,
+      "backtestTrades": 10,
+      "backtestProfitFactor": 0.223
     },
     {
       "fullName": "cjthoma1/flashswap-arbitrage-avalanche",
@@ -1552,7 +1604,11 @@
         "LINKUSDT",
         "UNIUSDT",
         "AAVEUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.172,
+      "backtestWinRate": 0.578,
+      "backtestTrades": 126,
+      "backtestProfitFactor": 0.577
     },
     {
       "fullName": "solidquant/mev-templates",
@@ -1813,7 +1869,11 @@
       "backtestStrategy": "grid",
       "backtestAssets": [
         "POLUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.549,
+      "backtestWinRate": 0.75,
+      "backtestTrades": 10,
+      "backtestProfitFactor": 0.223
     },
     {
       "fullName": "ogwurujohnson/arbitrage-bot",
@@ -2356,7 +2416,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": -1.141,
+      "backtestWinRate": null,
+      "backtestTrades": 132,
+      "backtestProfitFactor": null
     },
     {
       "fullName": "andrei-zgirvaci/Arbitrage-Bot",
@@ -3234,7 +3298,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.514,
+      "backtestWinRate": 0.74,
+      "backtestTrades": 25,
+      "backtestProfitFactor": 25.166
     },
     {
       "fullName": "SimSimButDifferent/HyperLiquidAlgoBot",
@@ -3313,7 +3381,11 @@
         "LINKUSDT",
         "UNIUSDT",
         "AAVEUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.172,
+      "backtestWinRate": 0.578,
+      "backtestTrades": 126,
+      "backtestProfitFactor": 0.577
     },
     {
       "fullName": "diego-tobalina/PancakeSwapBot",
@@ -3450,7 +3522,11 @@
         "LINKUSDT",
         "UNIUSDT",
         "AAVEUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.247,
+      "backtestWinRate": 0.613,
+      "backtestTrades": 102,
+      "backtestProfitFactor": 0.506
     },
     {
       "fullName": "JaghataiV/Uniswap_arb_bot",
@@ -3718,7 +3794,11 @@
       "backtestStrategy": "grid",
       "backtestAssets": [
         "ETHUSDT"
-      ]
+      ],
+      "backtestAlpha": -0.157,
+      "backtestWinRate": 0.722,
+      "backtestTrades": 39,
+      "backtestProfitFactor": 0.512
     },
     {
       "fullName": "cchighman/backrunner-rs",
@@ -3869,7 +3949,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.366,
+      "backtestWinRate": 0.669,
+      "backtestTrades": 68,
+      "backtestProfitFactor": 11.466
     },
     {
       "fullName": "syafiqeil/Rust-MEV-Builder",
@@ -4703,7 +4787,11 @@
         "JUPUSDT",
         "RAYUSDT",
         "WIFUSDT"
-      ]
+      ],
+      "backtestAlpha": 0.514,
+      "backtestWinRate": 0.74,
+      "backtestTrades": 25,
+      "backtestProfitFactor": 25.166
     },
     {
       "fullName": "0xTan1319/hyperliquid-trading-bot-rust",
@@ -5442,7 +5530,7 @@
   "backtest": {
     "available": true,
     "simulated": true,
-    "generatedAt": "2026-06-05T18:45:15.646Z",
+    "generatedAt": "2026-06-05T19:14:53.016Z",
     "evaluated": 22,
     "note": "out-of-sample backtest on a per-chain proxy market; simulated, not real gains"
   }

@@ -21,7 +21,12 @@ export interface Bot {
   backtestReturn?: number // fraction, e.g. -0.114 = -11.4% (simulated, not real)
   backtestSharpe?: number
   backtestDrawdown?: number
+  backtestAlpha?: number // return minus buy & hold — does it beat holding?
+  backtestWinRate?: number | null // fraction of winning trades (null if no closed trades)
+  backtestTrades?: number
+  backtestProfitFactor?: number | null // gross profit / gross loss (null if no closed trades)
   backtestMarket?: string
+  backtestAssets?: string[]
   backtestStrategy?: string
 }
 

@@ -5,7 +5,8 @@ import type { Bot, Dataset } from "../lib/types"
 import { securityBadge, combinedRank } from "../lib/types"
 
 const PROFIT_STRATEGIES = ["arbitrage", "mev", "sniping", "flashloan-arb", "sandwich"]
-type Sort = "rank" | "score" | "buzz" | "backtest"
+const fmtPct = (x: number) => `${x >= 0 ? "+" : ""}${(x * 100).toFixed(0)}%`
+type Sort = "rank" | "score" | "buzz" | "backtest" | "alpha"
 
 export default function BotExplorer({ data }: { data: Dataset }) {
   const [q, setQ] = useState("")
@@ -31,6 +32,10 @@ export default function BotExplorer({ data }: { data: Dataset }) {
     if (sort === "backtest") {
       const bt = (x: Bot) => (x.backtestable ? x.backtestReturn ?? -Infinity : -Infinity)
       return (a: Bot, b: Bot) => bt(b) - bt(a)
+    }
+    if (sort === "alpha") {
+      const al = (x: Bot) => (x.backtestable ? x.backtestAlpha ?? -Infinity : -Infinity)
+      return (a: Bot, b: Bot) => al(b) - al(a)
     }
     return (a: Bot, b: Bot) => b.botScore - a.botScore
   }, [sort])
@@ -102,6 +107,7 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           <option value="score">Trier : score qualité</option>
           {hasSocial && <option value="buzz">Trier : profit / buzz 🔥</option>}
           {hasBacktest && <option value="backtest">Trier : profit backtest 📈</option>}
+          {hasBacktest && <option value="alpha">Trier : bat le hold (α) 🎯</option>}
         </select>
         <label className="toggle">
           <input type="checkbox" checked={cleanOnly} onChange={(e) => setCleanOnly(e.target.checked)} />
@@ -197,6 +203,23 @@ function BotCard({ bot, rank }: { bot: Bot; rank: number }) {
           </span>
         ))}
       </div>
+      {bot.backtestable && (
+        <div className="bt-metrics" title="backtest simulé out-of-sample (moyenne multi-actifs)">
+          <span
+            className={(bot.backtestAlpha ?? 0) >= 0 ? "bt-pos" : "bt-neg"}
+            title="alpha : rendement du bot moins un simple buy & hold sur la même période"
+          >
+            α {fmtPct(bot.backtestAlpha ?? 0)}
+          </span>
+          <span title="part de trades gagnants">
+            win {bot.backtestWinRate == null ? "—" : `${Math.round(bot.backtestWinRate * 100)}%`}
+          </span>
+          <span title="nombre de trades simulés">{bot.backtestTrades ?? 0} tr</span>
+          <span title="profit factor : gains réalisés / pertes réalisées">
+            PF {bot.backtestProfitFactor == null ? "—" : bot.backtestProfitFactor.toFixed(1)}
+          </span>
+        </div>
+      )}
       <div className="meta">
         <span>⭐ {bot.stars.toLocaleString("fr-FR")}</span>
         {bot.backtestable && typeof bot.backtestReturn === "number" && (
