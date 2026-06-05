@@ -322,3 +322,87 @@ main {
 .footer a {
   color: var(--accent);
 }
+
+/* --- navigation links + backtests leaderboard page --- */
+.navlink {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 7px 14px;
+  border: 1px solid rgba(124, 92, 255, 0.4);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.navlink:hover {
+  background: rgba(124, 92, 255, 0.12);
+}
+.backlink {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: none;
+}
+.backlink:hover {
+  color: var(--accent);
+}
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+.bt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.bt-table th,
+.bt-table td {
+  padding: 8px 10px;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.bt-table th.left,
+.bt-table td.left {
+  text-align: left;
+}
+.bt-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--panel);
+  color: var(--muted);
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+.bt-table thead th:hover {
+  color: var(--text);
+}
+.bt-table thead th.sorted {
+  color: var(--accent);
+}
+.bt-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.bt-table td.pos {
+  color: #00d4a0;
+  font-weight: 700;
+}
+.bt-table td.neg {
+  color: #ff6b81;
+  font-weight: 700;
+}
+.bt-table td.muted {
+  color: var(--muted);
+}
+.bt-table a {
+  color: var(--text);
+  text-decoration: none;
+}
+.bt-table a:hover {
+  color: var(--accent);
+}

@@ -67,6 +67,11 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           Bots de trading DEX open-source découverts sur GitHub — classés par qualité, capacités et{" "}
           <strong>sécurité</strong>. Analyse statique, jamais d&apos;exécution.
         </p>
+        {hasBacktest && (
+          <a className="navlink" href="/backtests">
+            📈 Leaderboard backtests — alpha, win rate, profit factor →
+          </a>
+        )}
         <div className="stats">
           <Stat label="bots analysés" value={data.stats.totalBots} />
           <Stat label="score moyen" value={data.stats.avgScore} />
