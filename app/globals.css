@@ -406,3 +406,10 @@ main {
 .bt-table a:hover {
   color: var(--accent);
 }
+.spark {
+  vertical-align: middle;
+  display: inline-block;
+}
+.bt-table td:has(.spark) {
+  text-align: center;
+}

@@ -8,9 +8,15 @@ export const metadata = {
 }
 
 // Fully static (SSG): the bundled JSON is read at build time. Ideal for Vercel.
+const pct = (x: number) => `${(x * 100).toFixed(0)}%`
+
 export default function Page() {
   const data = dataset as Dataset
   const bots = data.bots.filter((b) => b.backtestable)
+  const beat = bots.filter((b) => (b.backtestAlpha ?? 0) > 0).length
+  const wins = bots.map((b) => b.backtestWinRate).filter((w): w is number => w != null)
+  const avgWin = wins.length ? wins.reduce((a, b) => a + b, 0) / wins.length : 0
+  const avgAlpha = bots.length ? bots.reduce((a, b) => a + (b.backtestAlpha ?? 0), 0) / bots.length : 0
   return (
     <main>
       <header className="hero">
@@ -29,6 +35,25 @@ export default function Page() {
           DCA / grid, walk-forward). <strong>Pas des gains réels.</strong> La plupart sont négatifs en absolu,
           mais battent souvent le simple hold (α &gt; 0).
         </p>
+        <div className="stats">
+          <div className="stat">
+            <div className="stat-value">
+              {beat}/{bots.length}
+            </div>
+            <div className="stat-label">battent le hold (α &gt; 0)</div>
+          </div>
+          <div className="stat">
+            <div className="stat-value">{pct(avgWin)}</div>
+            <div className="stat-label">win rate moyen</div>
+          </div>
+          <div className="stat">
+            <div className={`stat-value ${avgAlpha >= 0 ? "" : "stat-warn"}`}>
+              {avgAlpha >= 0 ? "+" : ""}
+              {pct(avgAlpha)}
+            </div>
+            <div className="stat-label">alpha moyen vs hold</div>
+          </div>
+        </div>
       </header>
 
       <BacktestTable bots={bots} />

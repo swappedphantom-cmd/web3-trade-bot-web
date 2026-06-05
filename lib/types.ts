@@ -25,6 +25,7 @@ export interface Bot {
   backtestWinRate?: number | null // fraction of winning trades (null if no closed trades)
   backtestTrades?: number
   backtestProfitFactor?: number | null // gross profit / gross loss (null if no closed trades)
+  backtestCurve?: number[] // equity curve, normalized to start=1, ~24 points
   backtestMarket?: string
   backtestAssets?: string[]
   backtestStrategy?: string
