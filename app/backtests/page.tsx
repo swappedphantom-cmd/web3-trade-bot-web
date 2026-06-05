@@ -27,9 +27,14 @@ export default function Page() {
         <h1>
           Backtests <span className="accent">📈</span>
         </h1>
-        <Link className="navlink" href="/methodologie">
-          🔬 Comment ça marche — méthodologie →
-        </Link>
+        <span className="navlinks">
+          <Link className="navlink" href="/paper">
+            🧪 Paper trading →
+          </Link>
+          <Link className="navlink" href="/methodologie">
+            🔬 Méthodologie →
+          </Link>
+        </span>
         <p className="subtitle">
           Performance <strong>simulée out-of-sample</strong> des {bots.length} bots backtestables — triable
           par alpha, win rate, profit factor, Sharpe…

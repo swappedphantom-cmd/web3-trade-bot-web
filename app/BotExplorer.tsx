@@ -69,9 +69,14 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           <strong>sécurité</strong>. Analyse statique, jamais d&apos;exécution.
         </p>
         {hasBacktest && (
-          <Link className="navlink" href="/backtests">
-            📈 Leaderboard backtests — alpha, win rate, profit factor →
-          </Link>
+          <span className="navlinks">
+            <Link className="navlink" href="/backtests">
+              📈 Leaderboard backtests →
+            </Link>
+            <Link className="navlink" href="/paper">
+              🧪 Paper trading →
+            </Link>
+          </span>
         )}
         <div className="stats">
           <Stat label="bots analysés" value={data.stats.totalBots} />

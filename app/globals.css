@@ -560,3 +560,12 @@ main {
   color: var(--muted);
   line-height: 1.5;
 }
+.navlinks {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+.navlinks .navlink {
+  margin-top: 0;
+}
