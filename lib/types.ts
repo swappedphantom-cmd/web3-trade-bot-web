@@ -11,6 +11,11 @@ export interface Bot {
   strategies: string[]
   redFlagCount: number
   updatedAt: string
+  // X social pulse (optional — present once the stack's x-social-pulse has run)
+  socialScore?: number
+  buzzVerdict?: string
+  profitRatio?: number
+  mentions?: number
 }
 
 export interface Dataset {
@@ -28,7 +33,17 @@ export interface Dataset {
     strategies: string[]
     languages: string[]
   }
+  social?: {
+    available: boolean
+    simulated: boolean
+    backend: string | null
+  }
   bots: Bot[]
+}
+
+export function combinedRank(b: Bot): number {
+  // Same 70/30 blend as the stack ranker, used to sort by overall rank.
+  return 0.7 * b.botScore + 0.3 * (b.socialScore ?? 0)
 }
 
 export function securityBadge(redFlagCount: number): { label: string; cls: string } {
