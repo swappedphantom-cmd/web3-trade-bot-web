@@ -189,12 +189,7 @@ export default function BacktestTable({ bots }: { bots: Bot[] }) {
                 >
                   <td className="muted">{open === b.fullName ? "▾" : "▸"}</td>
                   <td className="left">
-                    <a
-                      href={`https://github.com/${b.fullName}`}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                    >
+                    <a href={`/bot/${b.owner}/${b.repo}`} onClick={(e) => e.stopPropagation()}>
                       {b.fullName}
                     </a>
                   </td>
