@@ -1,12 +1,14 @@
+import Link from "next/link"
+
 export const metadata = { title: "Méthodologie — Web3 Trading Bot Index" }
 
 export default function Page() {
   return (
     <main>
       <header className="hero">
-        <a className="backlink" href="/">
+        <Link className="backlink" href="/">
           ← retour à l&apos;index
-        </a>
+        </Link>
         <h1>
           Méthodologie <span className="accent">🔬</span>
         </h1>
@@ -85,7 +87,7 @@ export default function Page() {
           que croire. Les performances passées simulées ne préjugent pas des résultats futurs.
         </p>
         <p className="meta-line">
-          <a href="/backtests">→ voir le leaderboard backtests</a>
+          <Link href="/backtests">→ voir le leaderboard backtests</Link>
         </p>
       </section>
 

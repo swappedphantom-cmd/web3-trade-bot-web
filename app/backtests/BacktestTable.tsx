@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Fragment, useMemo, useState } from "react"
 import type { Bot } from "../../lib/types"
 
@@ -189,9 +190,9 @@ export default function BacktestTable({ bots }: { bots: Bot[] }) {
                 >
                   <td className="muted">{open === b.fullName ? "▾" : "▸"}</td>
                   <td className="left">
-                    <a href={`/bot/${b.owner}/${b.repo}`} onClick={(e) => e.stopPropagation()}>
+                    <Link href={`/bot/${b.owner}/${b.repo}`} onClick={(e) => e.stopPropagation()}>
                       {b.fullName}
-                    </a>
+                    </Link>
                   </td>
                   <td className="left muted">
                     {b.backtestStrategy} · {b.backtestMarket}

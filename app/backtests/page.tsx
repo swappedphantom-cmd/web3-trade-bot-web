@@ -1,3 +1,4 @@
+import Link from "next/link"
 import dataset from "../../data/bots.json"
 import type { Dataset } from "../../lib/types"
 import BacktestTable from "./BacktestTable"
@@ -20,15 +21,15 @@ export default function Page() {
   return (
     <main>
       <header className="hero">
-        <a className="backlink" href="/">
+        <Link className="backlink" href="/">
           ← retour à l&apos;index
-        </a>
+        </Link>
         <h1>
           Backtests <span className="accent">📈</span>
         </h1>
-        <a className="navlink" href="/methodologie">
+        <Link className="navlink" href="/methodologie">
           🔬 Comment ça marche — méthodologie →
-        </a>
+        </Link>
         <p className="subtitle">
           Performance <strong>simulée out-of-sample</strong> des {bots.length} bots backtestables — triable
           par alpha, win rate, profit factor, Sharpe…

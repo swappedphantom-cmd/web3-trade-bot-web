@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useMemo, useState } from "react"
 import type { Bot, Dataset } from "../lib/types"
 import { securityBadge, combinedRank } from "../lib/types"
@@ -68,9 +69,9 @@ export default function BotExplorer({ data }: { data: Dataset }) {
           <strong>sécurité</strong>. Analyse statique, jamais d&apos;exécution.
         </p>
         {hasBacktest && (
-          <a className="navlink" href="/backtests">
+          <Link className="navlink" href="/backtests">
             📈 Leaderboard backtests — alpha, win rate, profit factor →
-          </a>
+          </Link>
         )}
         <div className="stats">
           <Stat label="bots analysés" value={data.stats.totalBots} />

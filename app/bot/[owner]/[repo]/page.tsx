@@ -1,3 +1,4 @@
+import Link from "next/link"
 import dataset from "../../../../data/bots.json"
 import type { Bot, Dataset } from "../../../../lib/types"
 import { securityBadge } from "../../../../lib/types"
@@ -62,9 +63,9 @@ export default function Page({ params }: { params: { owner: string; repo: string
   return (
     <main>
       <header className="hero">
-        <a className="backlink" href="/backtests">
+        <Link className="backlink" href="/backtests">
           ← retour au leaderboard
-        </a>
+        </Link>
         <h1>
           {bot.fullName} <span className={`badge ${badge.cls}`}>{badge.label}</span>
         </h1>
