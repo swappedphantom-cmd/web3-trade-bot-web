@@ -3,13 +3,13 @@
   "capital": 10000,
   "startMs": 1778025600000,
   "startDate": "2026-05-06",
-  "updatedAt": "2026-06-16",
-  "days": 42,
+  "updatedAt": "2026-06-17",
+  "days": 43,
   "portfolio": {
     "initialValue": 10000,
-    "finalValue": 9832.14,
-    "pnl": -167.86,
-    "return": -0.017,
+    "finalValue": 9851.76,
+    "pnl": -148.24,
+    "return": -0.015,
     "maxDrawdown": 0.031,
     "curve": [
       {
@@ -178,7 +178,11 @@
       },
       {
         "date": "2026-06-16",
-        "value": 9832.14
+        "value": 9818.56
+      },
+      {
+        "date": "2026-06-17",
+        "value": 9851.76
       }
     ]
   },
@@ -189,8 +193,8 @@
       "repo": "alpha-evm-dex-bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1627.31,
-      "return": -0.024
+      "finalValue": 1632.47,
+      "return": -0.021
     },
     {
       "fullName": "Neutral-Debug/Mexc-Trading-Bot",
@@ -198,8 +202,8 @@
       "repo": "Mexc-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1627.31,
-      "return": -0.024
+      "finalValue": 1632.47,
+      "return": -0.021
     },
     {
       "fullName": "xlev-v/Hyperliquid-Trading-Bot",
@@ -207,8 +211,8 @@
       "repo": "Hyperliquid-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1627.31,
-      "return": -0.024
+      "finalValue": 1632.47,
+      "return": -0.021
     },
     {
       "fullName": "wilsonfreitas/awesome-quant",
@@ -216,8 +220,8 @@
       "repo": "awesome-quant",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1627.31,
-      "return": -0.024
+      "finalValue": 1632.47,
+      "return": -0.021
     },
     {
       "fullName": "0xfnzero/sol-trade-sdk",
@@ -225,7 +229,7 @@
       "repo": "sol-trade-sdk",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1661.45,
+      "finalValue": 1660.95,
       "return": -0.003
     },
     {
@@ -234,7 +238,7 @@
       "repo": "solana-mmaker",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1661.45,
+      "finalValue": 1660.95,
       "return": -0.003
     }
   ]
