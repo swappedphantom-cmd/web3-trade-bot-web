@@ -3,13 +3,13 @@
   "capital": 10000,
   "startMs": 1778025600000,
   "startDate": "2026-05-06",
-  "updatedAt": "2026-06-29",
-  "days": 55,
+  "updatedAt": "2026-06-30",
+  "days": 56,
   "portfolio": {
     "initialValue": 10000,
-    "finalValue": 9753.7,
-    "pnl": -246.3,
-    "return": -0.025,
+    "finalValue": 9719.42,
+    "pnl": -280.58,
+    "return": -0.028,
     "maxDrawdown": 0.031,
     "curve": [
       {
@@ -230,7 +230,11 @@
       },
       {
         "date": "2026-06-29",
-        "value": 9753.7
+        "value": 9742.93
+      },
+      {
+        "date": "2026-06-30",
+        "value": 9719.42
       }
     ]
   },
@@ -241,8 +245,8 @@
       "repo": "alpha-evm-dex-bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1608.44,
-      "return": -0.035
+      "finalValue": 1599.81,
+      "return": -0.04
     },
     {
       "fullName": "Neutral-Debug/Mexc-Trading-Bot",
@@ -250,8 +254,8 @@
       "repo": "Mexc-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1608.44,
-      "return": -0.035
+      "finalValue": 1599.92,
+      "return": -0.04
     },
     {
       "fullName": "xlev-v/Hyperliquid-Trading-Bot",
@@ -259,8 +263,8 @@
       "repo": "Hyperliquid-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1608.44,
-      "return": -0.035
+      "finalValue": 1599.92,
+      "return": -0.04
     },
     {
       "fullName": "wilsonfreitas/awesome-quant",
@@ -268,8 +272,8 @@
       "repo": "awesome-quant",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1608.44,
-      "return": -0.035
+      "finalValue": 1599.92,
+      "return": -0.04
     },
     {
       "fullName": "0xfnzero/sol-trade-sdk",
@@ -277,7 +281,7 @@
       "repo": "sol-trade-sdk",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1659.96,
+      "finalValue": 1659.92,
       "return": -0.004
     },
     {
@@ -286,7 +290,7 @@
       "repo": "solana-mmaker",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1659.96,
+      "finalValue": 1659.92,
       "return": -0.004
     }
   ]
