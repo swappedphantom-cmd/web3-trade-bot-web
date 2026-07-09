@@ -3,12 +3,12 @@
   "capital": 10000,
   "startMs": 1778025600000,
   "startDate": "2026-05-06",
-  "updatedAt": "2026-07-08",
-  "days": 64,
+  "updatedAt": "2026-07-09",
+  "days": 65,
   "portfolio": {
     "initialValue": 10000,
-    "finalValue": 9839.36,
-    "pnl": -160.64,
+    "finalValue": 9842.94,
+    "pnl": -157.06,
     "return": -0.016,
     "maxDrawdown": 0.031,
     "curve": [
@@ -266,7 +266,11 @@
       },
       {
         "date": "2026-07-08",
-        "value": 9839.36
+        "value": 9840.93
+      },
+      {
+        "date": "2026-07-09",
+        "value": 9842.94
       }
     ]
   },
@@ -277,7 +281,7 @@
       "repo": "alpha-evm-dex-bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1624.33,
+      "finalValue": 1625.51,
       "return": -0.025
     },
     {
@@ -286,7 +290,7 @@
       "repo": "Mexc-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1624.33,
+      "finalValue": 1625.51,
       "return": -0.025
     },
     {
@@ -295,7 +299,7 @@
       "repo": "Hyperliquid-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1624.33,
+      "finalValue": 1625.51,
       "return": -0.025
     },
     {
@@ -304,7 +308,7 @@
       "repo": "awesome-quant",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1624.33,
+      "finalValue": 1625.51,
       "return": -0.025
     },
     {
@@ -313,8 +317,8 @@
       "repo": "sol-trade-sdk",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1671.01,
-      "return": 0.003
+      "finalValue": 1670.44,
+      "return": 0.002
     },
     {
       "fullName": "gianlucamazza/solana-mmaker",
@@ -322,8 +326,8 @@
       "repo": "solana-mmaker",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1671.03,
-      "return": 0.003
+      "finalValue": 1670.44,
+      "return": 0.002
     }
   ]
 }
