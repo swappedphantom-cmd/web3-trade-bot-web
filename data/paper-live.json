@@ -3,13 +3,13 @@
   "capital": 10000,
   "startMs": 1778025600000,
   "startDate": "2026-05-06",
-  "updatedAt": "2026-07-21",
-  "days": 77,
+  "updatedAt": "2026-07-22",
+  "days": 78,
   "portfolio": {
     "initialValue": 10000,
-    "finalValue": 9936.38,
-    "pnl": -63.62,
-    "return": -0.006,
+    "finalValue": 9895.67,
+    "pnl": -104.33,
+    "return": -0.01,
     "maxDrawdown": 0.031,
     "curve": [
       {
@@ -318,7 +318,11 @@
       },
       {
         "date": "2026-07-21",
-        "value": 9936.38
+        "value": 9909.03
+      },
+      {
+        "date": "2026-07-22",
+        "value": 9895.67
       }
     ]
   },
@@ -329,8 +333,8 @@
       "repo": "alpha-evm-dex-bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1648.5,
-      "return": -0.011
+      "finalValue": 1639.87,
+      "return": -0.016
     },
     {
       "fullName": "Neutral-Debug/Mexc-Trading-Bot",
@@ -338,8 +342,8 @@
       "repo": "Mexc-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1648.47,
-      "return": -0.011
+      "finalValue": 1639.87,
+      "return": -0.016
     },
     {
       "fullName": "xlev-v/Hyperliquid-Trading-Bot",
@@ -347,8 +351,8 @@
       "repo": "Hyperliquid-Trading-Bot",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1648.47,
-      "return": -0.011
+      "finalValue": 1639.87,
+      "return": -0.016
     },
     {
       "fullName": "wilsonfreitas/awesome-quant",
@@ -356,8 +360,8 @@
       "repo": "awesome-quant",
       "asset": "POLUSDT",
       "amount": 1666.67,
-      "finalValue": 1648.47,
-      "return": -0.011
+      "finalValue": 1639.87,
+      "return": -0.016
     },
     {
       "fullName": "0xfnzero/sol-trade-sdk",
@@ -365,8 +369,8 @@
       "repo": "sol-trade-sdk",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1671.23,
-      "return": 0.003
+      "finalValue": 1668.1,
+      "return": 0.001
     },
     {
       "fullName": "gianlucamazza/solana-mmaker",
@@ -374,8 +378,8 @@
       "repo": "solana-mmaker",
       "asset": "SOLUSDT",
       "amount": 1666.67,
-      "finalValue": 1671.25,
-      "return": 0.003
+      "finalValue": 1668.1,
+      "return": 0.001
     }
   ]
 }
